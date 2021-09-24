@@ -5,6 +5,6 @@
     <string name="btn_calcular">Calcular</string>
 
     <string name="texto_resultado">Si fueras perro, tu edad sería %d años</string>
-    <string name="msg_toast">No has introducido ningun número.</string>
+    <string name="msg_toast">No has introducido ningún número.</string>
 
 </resources>
