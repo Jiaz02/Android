@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">1-Mi Edad Canina</string>
+    <string name="app_name">Mi Edad Canina</string>
+    <string name="pregunta_ppal">¿Cuántos años tienes?</string>
 </resources>

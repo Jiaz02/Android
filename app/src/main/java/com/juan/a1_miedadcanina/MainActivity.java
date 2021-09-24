@@ -7,6 +7,7 @@ import android.util.Log;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -20,11 +21,11 @@ public class MainActivity extends AppCompatActivity {
         TextView resultadoText = findViewById(R.id.resultado_et);
         Button boton = findViewById(R.id.button_btn);
 
-        Log.v("MainActivity", "La actividad principal se ha creado");
+        //Log.v("MainActivity", "La actividad principal se ha creado");
         Log.d("MainActivity", "La actividad principal se ha creado");
-        Log.i("MainActivity", "La actividad principal se ha creado");
-        Log.w("MainActivity", "La actividad principal se ha creado");
-        Log.e("MainActivity", "La actividad principal se ha creado");
+        //Log.i("MainActivity", "La actividad principal se ha creado");
+        //Log.w("MainActivity", "La actividad principal se ha creado");
+        //Log.e("MainActivity", "La actividad principal se ha creado");
 
         //2- Damos actividad al boton al ser pulsado
         boton.setOnClickListener( view -> {
@@ -43,6 +44,8 @@ public class MainActivity extends AppCompatActivity {
                 resultadoText.setText(resultadoString);
             } else{
                 Log.d("MainActivity","Has introducido un campo vacio");
+                Toast.makeText(this, "No has introducido ningun número.",Toast.LENGTH_LONG).show();
+
             }
         });
     }
