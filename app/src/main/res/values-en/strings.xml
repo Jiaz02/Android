@@ -1,2 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+
+<resources>
+    <string name="app_name">My Dog Age</string>
+    <string name="pregunta_ppal">How old are you</string>
+    <string name="introdu_edad">Tell us your age</string>
+    <string name="btn_calcular">Calculate</string>
+
+    <string name="texto_resultado">If you were a dog, your age would be %d years old</string>
+    <string name="msg_toast">You has not introduce any number.</string>
+
+</resources>
