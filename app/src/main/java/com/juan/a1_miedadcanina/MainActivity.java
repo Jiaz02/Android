@@ -39,12 +39,12 @@ public class MainActivity extends AppCompatActivity {
                 //5- Calculamos la edad canina
                 int resultado = edadInt * 7;
                 //6- creamos el texto que vamos a mostrar
-                String resultadoString = "Si fueras un perro tu edad sería " + resultado + " años";
+                String resultadoString = getString(R.string.texto_resultado,resultado);
                 //7- asignamos el texto al elemento textview
                 resultadoText.setText(resultadoString);
             } else{
                 Log.d("MainActivity","Has introducido un campo vacio");
-                Toast.makeText(this, "No has introducido ningun número.",Toast.LENGTH_LONG).show();
+                Toast.makeText(this, getString(R.string.msg_toast),Toast.LENGTH_LONG).show();
 
             }
         });
