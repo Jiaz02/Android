@@ -24,7 +24,7 @@ public class Segundaactivity extends AppCompatActivity {
             startActivity(irAACtivity1);
         });
 
-        btnIrAC3 = findViewById(R.id.btn4);
+        btnIrAC3 = findViewById(R.id.btn3);
         btnIrAC3.setOnClickListener(view -> {
             Intent irAACtivity3 = new Intent(Segundaactivity.this,terceraPantalla.class);
             startActivity(irAACtivity3);
