@@ -7,9 +7,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class Segundaactivity extends AppCompatActivity implements View.OnClickListener {
+public class Segundaactivity extends AppCompatActivity {
 
     Button btnIrAc1;
+    Button btnIrAC3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,17 +19,18 @@ public class Segundaactivity extends AppCompatActivity implements View.OnClickLi
 
         btnIrAc1 = findViewById(R.id.btn2);
 
-        btnIrAc1.setOnClickListener(this);
+        btnIrAc1.setOnClickListener(view -> {
+            Intent irAACtivity1 = new Intent(Segundaactivity.this,MainActivity.class);
+            startActivity(irAACtivity1);
+        });
+
+        btnIrAC3 = findViewById(R.id.btn4);
+        btnIrAC3.setOnClickListener(view -> {
+            Intent irAACtivity3 = new Intent(Segundaactivity.this,terceraPantalla.class);
+            startActivity(irAACtivity3);
+        });
+
     }
 
-    @Override
-    public void onClick(View view) {
-        //Para cambiar de activity lo primero que haremos sera crear el Intent
-        //1--le diremos en el primer campo desde dodne le llamamos y en el segundo a donde queremos ir
-        Intent irAACtivity1 = new Intent(Segundaactivity.
-                this,MainActivity.class);
 
-        //2--Lanzamos el activitycon el metodo startActivity
-        startActivity(irAACtivity1);
-    }
 }
