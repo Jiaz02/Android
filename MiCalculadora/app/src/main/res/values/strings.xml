@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Mi Calculadora</string>
+    <string name="msg_toast">Has introducido un campo vacio</string>
 </resources>
