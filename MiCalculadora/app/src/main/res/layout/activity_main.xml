@@ -32,6 +32,7 @@
         android:id="@+id/numuno"
         android:layout_width="205dp"
         android:layout_height="29dp"
+        android:layout_marginLeft="6dp"
         android:text="Introduce el Primer Numero"
         android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -54,6 +55,7 @@
         android:id="@+id/numdos"
         android:layout_width="204dp"
         android:layout_height="29dp"
+        android:layout_margin="6dp"
         android:text="Introduce el Segundo Numero"
         android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -81,6 +83,7 @@
             android:id="@+id/button"
             android:layout_width="107dp"
             android:layout_height="wrap_content"
+            android:layout_margin="4dp"
             android:layout_weight="1"
             android:text="SUMAR" />
 
@@ -88,6 +91,7 @@
             android:id="@+id/button2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_margin="4dp"
             android:layout_weight="1"
             android:text="RESTAR" />
 
@@ -95,6 +99,7 @@
             android:id="@+id/button3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_margin="4dp"
             android:layout_weight="1"
             android:text="MULT" />
 
@@ -102,6 +107,7 @@
             android:id="@+id/button4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_margin="4dp"
             android:layout_weight="1"
             android:text="DIVIDIR" />
     </LinearLayout>
@@ -110,6 +116,7 @@
         android:id="@+id/textResultado"
         android:layout_width="match_parent"
         android:layout_height="29dp"
+        android:layout_margin="6dp"
         android:text="El resultado de la operacion es:"
         android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
