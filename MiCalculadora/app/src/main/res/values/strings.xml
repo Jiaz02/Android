@@ -1,4 +1,13 @@
 <resources>
     <string name="app_name">Mi Calculadora</string>
+    <string name="num1">Introduce el Primer Numero</string>
+    <string name="num2">Introduce el Segundo Numero</string>
+    <string name="numuno">Num 1</string>
+    <string name="numdos">Num 2</string>
+    <string name="btnSuma">SUMA</string>
+    <string name="btnResta">RESTA</string>
+    <string name="btnMulti">MULTI</string>
+    <string name="btnDiv">DIVISION</string>
+    <string name="texto_resultado">El resultado de la operacion es:</string>
     <string name="msg_toast">Has introducido un campo vacio</string>
 </resources>
