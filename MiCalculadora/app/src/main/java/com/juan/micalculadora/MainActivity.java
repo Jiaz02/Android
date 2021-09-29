@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         suma.setOnClickListener( view -> {
-            //3- recogemos el texto del edit text
+            //3- recogemos el texto de los edit text
             String num1 = numuno.getText().toString();
             String num2 = numdos.getText().toString();
             String msgResultado=resultadoText.getText().toString();
@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         resta.setOnClickListener( view -> {
-            //3- recogemos el texto del edit text
+            //3- recogemos el texto de los edit text
             String num1 = numuno.getText().toString();
             String num2 = numdos.getText().toString();
             String msgResultado=resultadoText.getText().toString();
@@ -63,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         multi.setOnClickListener( view -> {
-            //3- recogemos el texto del edit text
+            //3- recogemos el texto de los edit text
             String num1 = numuno.getText().toString();
             String num2 = numdos.getText().toString();
             String msgResultado=resultadoText.getText().toString();
@@ -81,7 +81,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         div.setOnClickListener( view -> {
-            //3- recogemos el texto del edit text
+            //3- recogemos el texto de los edit text
             String num1 = numuno.getText().toString();
             String num2 = numdos.getText().toString();
             String msgResultado=resultadoText.getText().toString();
