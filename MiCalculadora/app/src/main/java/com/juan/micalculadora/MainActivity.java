@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
             String num2 = numdos.getText().toString();
             String msgResultado=resultadoText.getText().toString();
 
-            if (!num1.isEmpty()) {
+            if (!num1.isEmpty()||!num2.isEmpty()) {
                 int numero1 = Integer.parseInt(num1);
                 int numero2 = Integer.parseInt(num2);
                 int resultado = numero1 + numero2;
@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
             String num2 = numdos.getText().toString();
             String msgResultado=resultadoText.getText().toString();
 
-            if (!num1.isEmpty()) {
+            if (!num1.isEmpty()||!num2.isEmpty()) {
                 int numero1 = Integer.parseInt(num1);
                 int numero2 = Integer.parseInt(num2);
                 int resultado = numero1 - numero2;
@@ -68,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
             String num2 = numdos.getText().toString();
             String msgResultado=resultadoText.getText().toString();
 
-            if (!num1.isEmpty()) {
+            if (!num1.isEmpty()||!num2.isEmpty()) {
                 int numero1 = Integer.parseInt(num1);
                 int numero2 = Integer.parseInt(num2);
                 int resultado = numero1 * numero2;
@@ -86,7 +86,7 @@ public class MainActivity extends AppCompatActivity {
             String num2 = numdos.getText().toString();
             String msgResultado=resultadoText.getText().toString();
 
-            if (!num1.isEmpty()) {
+            if (!num1.isEmpty()||!num2.isEmpty()) {
                 int numero1 = Integer.parseInt(num1);
                 int numero2 = Integer.parseInt(num2);
                 int resultado = numero1 / numero2;
