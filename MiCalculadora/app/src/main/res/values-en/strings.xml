@@ -12,4 +12,5 @@
     <string name="btnDiv">DIVISION</string>
     <string name="texto_resultado">The result of that operation is: </string>
     <string name="msg_toast">You has less an empty field</string>
+    <string name="msg_toast2">You can not divide by 0</string>
 </resources>

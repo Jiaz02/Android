@@ -82,7 +82,7 @@ public class MainActivity extends AppCompatActivity {
             //3- recogemos el texto de los edit text
             String num1 = numuno.getText().toString();
             String num2 = numdos.getText().toString();
-
+            try {
             if (!(num1.isEmpty()||num2.isEmpty())) {
                 int numero1 = Integer.parseInt(num1);
                 int numero2 = Integer.parseInt(num2);
@@ -93,6 +93,15 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(this, getString(R.string.msg_toast),Toast.LENGTH_LONG).show();
 
             }
+            }
+
+            /* En caso de que surja algún error
+             * de tipo aritmético,Por ejemplo,
+             * que no se puede dividir entre cero*/
+            catch (ArithmeticException e){
+                Toast.makeText(this, getString(R.string.msg_toast2),Toast.LENGTH_LONG).show();
+            }
+
         });
 
 

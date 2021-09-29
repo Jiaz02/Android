@@ -11,4 +11,5 @@
     <string name="btnDiv">DIVISION</string>
     <string name="texto_resultado">El resultado de la operacion es:</string>
     <string name="msg_toast">Has introducido un campo vacio</string>
+    <string name="msg_toast2">No se puede dividir por cero</string>
 </resources>
