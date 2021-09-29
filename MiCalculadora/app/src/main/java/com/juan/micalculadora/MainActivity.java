@@ -1,5 +1,6 @@
 package com.juan.micalculadora;
 
+import androidx.annotation.StringRes;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
@@ -24,15 +25,14 @@ public class MainActivity extends AppCompatActivity {
         Button resta = findViewById(R.id.btnResta);
         Button multi = findViewById(R.id.btnMulti);
         Button div = findViewById(R.id.btnDiv);
-
+        String msgResultado=resultadoText.getText().toString();
 
         suma.setOnClickListener( view -> {
             //3- recogemos el texto de los edit text
             String num1 = numuno.getText().toString();
             String num2 = numdos.getText().toString();
-            String msgResultado=resultadoText.getText().toString();
 
-            if (!num1.isEmpty()||!num2.isEmpty()) {
+            if (!(num1.isEmpty()||num2.isEmpty())) {
                 int numero1 = Integer.parseInt(num1);
                 int numero2 = Integer.parseInt(num2);
                 int resultado = numero1 + numero2;
@@ -48,9 +48,8 @@ public class MainActivity extends AppCompatActivity {
             //3- recogemos el texto de los edit text
             String num1 = numuno.getText().toString();
             String num2 = numdos.getText().toString();
-            String msgResultado=resultadoText.getText().toString();
 
-            if (!num1.isEmpty()||!num2.isEmpty()) {
+            if (!(num1.isEmpty()||num2.isEmpty())) {
                 int numero1 = Integer.parseInt(num1);
                 int numero2 = Integer.parseInt(num2);
                 int resultado = numero1 - numero2;
@@ -66,9 +65,8 @@ public class MainActivity extends AppCompatActivity {
             //3- recogemos el texto de los edit text
             String num1 = numuno.getText().toString();
             String num2 = numdos.getText().toString();
-            String msgResultado=resultadoText.getText().toString();
 
-            if (!num1.isEmpty()||!num2.isEmpty()) {
+            if (!(num1.isEmpty()||num2.isEmpty())) {
                 int numero1 = Integer.parseInt(num1);
                 int numero2 = Integer.parseInt(num2);
                 int resultado = numero1 * numero2;
@@ -84,9 +82,8 @@ public class MainActivity extends AppCompatActivity {
             //3- recogemos el texto de los edit text
             String num1 = numuno.getText().toString();
             String num2 = numdos.getText().toString();
-            String msgResultado=resultadoText.getText().toString();
 
-            if (!num1.isEmpty()||!num2.isEmpty()) {
+            if (!(num1.isEmpty()||num2.isEmpty())) {
                 int numero1 = Integer.parseInt(num1);
                 int numero2 = Integer.parseInt(num2);
                 int resultado = numero1 / numero2;
