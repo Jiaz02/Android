@@ -11,7 +11,7 @@
         android:id="@+id/nombre"
         android:layout_width="216dp"
         android:layout_height="45dp"
-        android:text="Mi Calculadora"
+        android:text="@string/inicio"
         android:textColor="@color/black"
         android:textSize="26dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -33,7 +33,7 @@
         android:layout_width="205dp"
         android:layout_height="29dp"
         android:layout_marginLeft="6dp"
-        android:text="Introduce el Primer Numero"
+        android:text="@string/num1"
         android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -46,7 +46,7 @@
         android:id="@+id/NUM1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Num 1"
+        android:hint="@string/numuno"
         android:inputType="number"
         android:padding="16dp"
         />
@@ -56,7 +56,7 @@
         android:layout_width="204dp"
         android:layout_height="29dp"
         android:layout_margin="6dp"
-        android:text="Introduce el Segundo Numero"
+        android:text="@string/num2"
         android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -69,7 +69,7 @@
         android:id="@+id/NUM2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Num 2"
+        android:hint="@string/numdos"
         android:inputType="number"
         android:padding="16dp"
         />
@@ -85,7 +85,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="4dp"
             android:layout_weight="1"
-            android:text="SUMAR" />
+            android:text="@string/btnSuma" />
 
         <Button
             android:id="@+id/btnResta"
@@ -93,7 +93,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="4dp"
             android:layout_weight="1"
-            android:text="RESTAR" />
+            android:text="@string/btnResta" />
 
         <Button
             android:id="@+id/btnMulti"
@@ -101,7 +101,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="4dp"
             android:layout_weight="1"
-            android:text="MULT" />
+            android:text="@string/btnMulti" />
 
         <Button
             android:id="@+id/btnDiv"
@@ -109,7 +109,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="4dp"
             android:layout_weight="1"
-            android:text="DIVIDIR" />
+            android:text="@string/btnDiv" />
     </LinearLayout>
 
     <TextView
@@ -117,7 +117,7 @@
         android:layout_width="match_parent"
         android:layout_height="29dp"
         android:layout_margin="6dp"
-        android:text="El resultado de la operacion es:"
+        android:text="@string/texto_resultado"
         android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
