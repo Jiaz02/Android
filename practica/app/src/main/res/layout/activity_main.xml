@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/socio_imagen"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@android:drawable/ic_menu_camera"
+        />
+
+    <EditText
+        android:id="@+id/nombre_socio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/socio_imagen"
+        android:layout_marginStart="16dp"
+        android:layout_toEndOf="@+id/socio_imagen"
+        android:hint="@string/nombre_socio"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/apellido_socio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/socio_imagen"
+        android:layout_marginStart="16dp"
+        android:layout_toEndOf="@+id/socio_imagen"
+        android:hint="@string/apellido_socio"
+        android:minHeight="48dp" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/socio_imagen"
+        android:background="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/texto_nivel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextBio"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="@string/texto_nivel"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/texto_nivel"
+        android:layout_centerHorizontal="true"
+        android:progressTint="@color/yelow" />
+
+    <Button
+        android:id="@+id/boton_guardar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="@string/guardar"
+        />
+
+    <EditText
+        android:id="@+id/editTextBio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/divider"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Biografia Del Socio" />
+
+</RelativeLayout>
