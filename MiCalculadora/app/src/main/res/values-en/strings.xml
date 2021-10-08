@@ -6,10 +6,10 @@
     <string name="num2">Writte the second number</string>
     <string name="numuno">Num 1</string>
     <string name="numdos">Num 2</string>
-    <string name="btnSuma">SUM</string>
-    <string name="btnResta">REST</string>
-    <string name="btnMulti">MULTI</string>
-    <string name="btnDiv">DIVISION</string>
+    <string name="btnSuma">+</string>
+    <string name="btnResta">-</string>
+    <string name="btnMulti">X</string>
+    <string name="btnDiv">/</string>
     <string name="texto_resultado">The result of that operation is: </string>
     <string name="msg_toast">You has less an empty field</string>
     <string name="msg_toast2">You can not divide by 0</string>

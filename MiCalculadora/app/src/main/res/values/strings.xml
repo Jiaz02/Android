@@ -5,10 +5,11 @@
     <string name="num2">Introduce el Segundo Numero</string>
     <string name="numuno">Num 1</string>
     <string name="numdos">Num 2</string>
-    <string name="btnSuma">SUMA</string>
-    <string name="btnResta">RESTA</string>
-    <string name="btnMulti">MULTI</string>
-    <string name="btnDiv">DIVISION</string>
+    <string name="btnSuma">+</string>
+    <string name="btnResta">-</string>
+    <string name="btnMulti">X</string>
+    <string name="btnDiv">/
+    </string>
     <string name="texto_resultado">El resultado de la operacion es:</string>
     <string name="msg_toast">Has introducido un campo vacio</string>
     <string name="msg_toast2">No se puede dividir por cero</string>
