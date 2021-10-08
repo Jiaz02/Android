@@ -1,7 +1,0 @@
-<resources>
-    <string name="app_name">Registro de socios</string>
-    <string name="nombre_socio">Nombre</string>
-    <string name="apellido_socio">Apellidos</string>
-    <string name="texto_nivel">Nivel</string>
-    <string name="guardar">Guardar</string>
-</resources>
