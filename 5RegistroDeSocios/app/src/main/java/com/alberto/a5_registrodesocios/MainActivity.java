@@ -91,6 +91,8 @@ public class MainActivity extends AppCompatActivity {
             );
             // 2b.2 Enviamos el objeto al intent
             irDetalle.putExtra("nuevoSocio",nuevoSocio);
+            //mandamos la foto
+            irDetalle.putExtra("imagenSocio",fotoSocioTomada);
 
             // 3- Nos vamos al Detail Activity
             startActivity(irDetalle);

@@ -55,7 +55,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/texto_nivel"
         android:layout_centerHorizontal="true"
-        android:progressTint="@color/yellow" />
+        android:progressTint="@color/green" />
 
     <Button
         android:id="@+id/boton_guardar"
