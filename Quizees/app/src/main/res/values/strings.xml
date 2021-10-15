@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Quizees</string>
+    <string name="NumPregunta">1/3</string>
+    <string name="Pregunta">¿Quien es el legendario Super Saiajin?</string>
+    <string name="Respuesta1">Goku</string>
+    <string name="Respuesta2">Broly</string>
+    <string name="btnEnviar">Enviar</string>
+</resources>

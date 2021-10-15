@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="48dp"
+    android:paddingBottom="48dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/idNumPregunta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:padding="16dp"
+        android:paddingTop="24dp"
+        android:text="@string/NumPregunta"
+        android:textColor="#000000"
+        android:textSize="24dp" />
+
+    <TextView
+        android:id="@+id/idPregunta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="48dp"
+        android:paddingBottom="24dp"
+        android:text="@string/Pregunta"
+        android:textSize="16dp" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="?android:attr/listDivider" />
+
+    <RadioGroup
+        android:id="@+id/RadioRespuesta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="24dp"
+        android:paddingBottom="24dp">
+
+        <RadioButton
+            android:id="@+id/radioButtonRespuesta1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="48dp"
+            android:paddingBottom="48dp"
+            android:onClick="clickOnAnswer"
+            android:text="@string/Respuesta1" />
+
+        <RadioButton
+            android:id="@+id/radioButtonRespuesta2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="48dp"
+            android:paddingBottom="48dp"
+            android:onClick="clickOnAnswer"
+            android:text="@string/Respuesta2" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/buttonEnviar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="@string/btnEnviar" />
+
+</LinearLayout>
