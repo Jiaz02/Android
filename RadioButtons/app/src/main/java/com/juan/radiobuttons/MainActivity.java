@@ -17,18 +17,36 @@ public class MainActivity extends AppCompatActivity {
         CheckBox cbFutbol = findViewById(R.id.cBFutbol);
         CheckBox cbBaloncesto = findViewById(R.id.cBBaloncesto);
         CheckBox cbPadel = findViewById(R.id.cBPadel);
+
+        setTitle("CheckBoxes");
     }
 
     public void clickOnHobby(View view) {
+
+        Boolean isChecked = ((CheckBox) view).isChecked();
+
         switch (view.getId()){
+
             case R.id.cBFutbol:
-                Toast.makeText(this,"Futbol ha sido seleccionado",Toast.LENGTH_LONG);
+                if (isChecked) {
+                    Toast.makeText(this, "Futbol ha sido seleccionado", Toast.LENGTH_LONG);
+                }else{
+                    Toast.makeText(this, "Futbol ha sido desseleccionado", Toast.LENGTH_LONG);
+                }
                 break;
             case R.id.cBBaloncesto:
-                Toast.makeText(this,"Baloncesto ha sido seleccionado",Toast.LENGTH_LONG);
+                if (isChecked) {
+                    Toast.makeText(this, "Baloncesto ha sido seleccionado", Toast.LENGTH_LONG);
+                }else {
+                    Toast.makeText(this, "Baloncesto ha sido desseleccionado", Toast.LENGTH_LONG);
+                }
                 break;
             case R.id.cBPadel:
-                Toast.makeText(this,"Padel ha sido seleccionado",Toast.LENGTH_LONG);
+                if (isChecked) {
+                    Toast.makeText(this, "Padel ha sido seleccionado", Toast.LENGTH_LONG);
+                } else{
+                    Toast.makeText(this, "Padel ha sido desseleccionado", Toast.LENGTH_LONG);
+                }
                 break;
         }
     }
