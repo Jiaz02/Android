@@ -29,23 +29,23 @@ public class MainActivity extends AppCompatActivity {
 
             case R.id.cBFutbol:
                 if (isChecked) {
-                    Toast.makeText(this, "Futbol ha sido seleccionado", Toast.LENGTH_LONG);
+                    Toast.makeText(this, "Futbol ha sido seleccionado", Toast.LENGTH_LONG).show();
                 }else{
-                    Toast.makeText(this, "Futbol ha sido desseleccionado", Toast.LENGTH_LONG);
+                    Toast.makeText(this, "Futbol ha sido desseleccionado", Toast.LENGTH_LONG).show();
                 }
                 break;
             case R.id.cBBaloncesto:
                 if (isChecked) {
-                    Toast.makeText(this, "Baloncesto ha sido seleccionado", Toast.LENGTH_LONG);
+                    Toast.makeText(this, "Baloncesto ha sido seleccionado", Toast.LENGTH_LONG).show();
                 }else {
-                    Toast.makeText(this, "Baloncesto ha sido desseleccionado", Toast.LENGTH_LONG);
+                    Toast.makeText(this, "Baloncesto ha sido desseleccionado", Toast.LENGTH_LONG).show();
                 }
                 break;
             case R.id.cBPadel:
                 if (isChecked) {
-                    Toast.makeText(this, "Padel ha sido seleccionado", Toast.LENGTH_LONG);
+                    Toast.makeText(this, "Padel ha sido seleccionado", Toast.LENGTH_LONG).show();
                 } else{
-                    Toast.makeText(this, "Padel ha sido desseleccionado", Toast.LENGTH_LONG);
+                    Toast.makeText(this, "Padel ha sido desseleccionado", Toast.LENGTH_LONG).show();
                 }
                 break;
         }
