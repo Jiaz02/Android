@@ -7,22 +7,21 @@
     tools:context=".Pantalla2">
 
     <TextView
-        android:id="@+id/idTextFinal"
+        android:id="@+id/idFinal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/Final"
-        android:textColor="#000000"
-        android:textSize="24dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/buttonSiguiente"
+        android:id="@+id/buttonSigueinte"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/BottonPantalla2"
+        android:layout_marginBottom="24dp"
+        android:text="@string/continuar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
