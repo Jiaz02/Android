@@ -11,31 +11,40 @@
         android:theme="@style/Theme.Dashboard">
         <activity
             android:name=".activities.Activity_Setings"
-            android:exported="true" />
+            android:exported="true"
+            android:theme="@style/SettingsTheme"/>
         <activity
             android:name=".activities.Activity_Restaurantes"
-            android:exported="true" />
+            android:exported="true"
+            android:theme="@style/RestaurantesTheme"/>
         <activity
             android:name=".activities.Activity_Mapas"
-            android:exported="true" />
+            android:exported="true"
+            android:theme="@style/MapasTheme"/>
         <activity
             android:name=".activities.Activity_Galeria"
-            android:exported="true" />
+            android:exported="true"
+            android:theme="@style/GaleriaTheme"/>
         <activity
             android:name=".activities.Activity_Quizzes"
-            android:exported="true" />
+            android:exported="true"
+            android:theme="@style/QuizzesTheme"/>
         <activity
             android:name=".activities.Activity_Edad"
-            android:exported="true" />
+            android:exported="true"
+            android:theme="@style/PerreteTheme"/>
         <activity
             android:name=".activities.Amigos_Activity"
-            android:exported="true" />
+            android:exported="true"
+            android:theme="@style/AmigosTheme"/>
         <activity
             android:name=".activities.Calculadora_Activity"
-            android:exported="true" />
+            android:exported="true"
+            android:theme="@style/CalculadoraTheme"/>
         <activity
             android:name=".MainActivity"
-            android:exported="true">
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
