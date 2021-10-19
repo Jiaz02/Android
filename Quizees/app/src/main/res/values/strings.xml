@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">Quizzes</string>
     <string name="NumPregunta">1/3</string>
+    <string name="NumPregunta2">2/3</string>
+    <string name="NumPregunta3">3/3</string>
 
     <string name="Pregunta">¿Se puede sobrevivir si caes en un agujero negro?</string>
     <string name="Respuesta1">Si</string>

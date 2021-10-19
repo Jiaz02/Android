@@ -84,6 +84,8 @@ public class MainActivity extends AppCompatActivity {
         Pregunta p3= new Pregunta(1,aux4,respuestasp1,aux2);
         preguntas.add(p3);
 
+
+
         switch (view.getId()){
             case R.id.radioButtonRespuesta1:
                 if(isChecked){
@@ -100,7 +102,6 @@ public class MainActivity extends AppCompatActivity {
                     Seleccion=getString(R.string.Respuesta3);
                 }
                 break;
-
             default:
                 Toast.makeText(this,"No has selecionado nada >:(",Toast.LENGTH_LONG).show();
         }
