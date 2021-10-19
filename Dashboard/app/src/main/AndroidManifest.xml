@@ -10,6 +10,30 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Dashboard">
         <activity
+            android:name=".activities.Activity_Setings"
+            android:exported="true" />
+        <activity
+            android:name=".activities.Activity_Restaurantes"
+            android:exported="true" />
+        <activity
+            android:name=".activities.Activity_Mapas"
+            android:exported="true" />
+        <activity
+            android:name=".activities.Activity_Galeria"
+            android:exported="true" />
+        <activity
+            android:name=".activities.Activity_Quizzes"
+            android:exported="true" />
+        <activity
+            android:name=".activities.Activity_Edad"
+            android:exported="true" />
+        <activity
+            android:name=".activities.Amigos_Activity"
+            android:exported="true" />
+        <activity
+            android:name=".activities.Calculadora_Activity"
+            android:exported="true" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
