@@ -28,8 +28,15 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         SystemClock.sleep(4000);
 
+        if(respuestasCorrectas+respuestasIncorrectas!=0) {
+            Bundle extras = getIntent().getExtras();
+            respuestasCorrectas = extras.getInt("aciertos");
+            System.out.println(respuestasCorrectas);
+            respuestasIncorrectas = extras.getInt("errores");
+            System.out.println(respuestasIncorrectas);
+        }
 
-
+        TextView idPregunta=findViewById(R.id.idNumPregunta);
         TextView pregunta = findViewById(R.id.idPregunta);
 
         RadioGroup rp = findViewById(R.id.RadioRespuesta);
@@ -60,21 +67,90 @@ public class MainActivity extends AppCompatActivity {
         Pregunta p3= new Pregunta(3,aux4,aux1,aux2,aux3,aux1);
         preguntas.add(p3);
 
+        switch (respuestasCorrectas+respuestasIncorrectas){
+            case 0:
+                idPregunta.setText(getResources().getString(R.string.NumPregunta));
+                pregunta.setText(p1.getPregunta());
+                rp1.setText(p1.getRespuesta1());
+                rp2.setText(p1.getRespuesta2());
+                rp3.setText(p1.getRespuesta3());
+                break;
+            case 1:
+                idPregunta.setText(getResources().getString(R.string.NumPregunta2));
+                pregunta.setText(p2.getPregunta());
+                rp1.setText(p2.getRespuesta1());
+                rp2.setText(p2.getRespuesta2());
+                rp3.setText(p2.getRespuesta3());
+                break;
+            case 2:
+                idPregunta.setText(getResources().getString(R.string.NumPregunta3));
+                pregunta.setText(p3.getPregunta());
+                rp1.setText(p3.getRespuesta1());
+                rp2.setText(p3.getRespuesta2());
+                rp3.setText(p3.getRespuesta3());
+                break;
+        }
 
         btnSend.setOnClickListener(view -> {
             if(avanzar) {
 
                 if (Seleccion.equals(p1.getRespuestaCorrecta())) {
-                    pregunta.setText(p2.getPregunta());
-                    rp1.setText(p2.getRespuesta1());
-                    rp2.setText(p2.getRespuesta2());
-                    rp3.setText(p2.getRespuesta3());
 
+                    respuestasCorrectas++;
+
+                    Intent irPantalla2 = new Intent(this, Pantalla2.class);
+                    irPantalla2.putExtra("correctas",respuestasCorrectas);
+                    irPantalla2.putExtra("incorrectas",respuestasIncorrectas);
+                    startActivity(irPantalla2);
+
+                }else{
+                    respuestasIncorrectas++;
+
+                    Intent irPantalla2 = new Intent(this, Pantalla2.class);
+                    irPantalla2.putExtra("correctas",respuestasCorrectas);
+                    irPantalla2.putExtra("incorrectas",respuestasIncorrectas);
+                    startActivity(irPantalla2);
                 }
-                Intent irPantalla2 = new Intent(this, Pantalla2.class);
-                startActivity(irPantalla2);
+                if (Seleccion.equals(p2.getRespuestaCorrecta())) {
+
+                    respuestasCorrectas++;
+
+                    Intent irPantalla2 = new Intent(this, Pantalla2.class);
+                    irPantalla2.putExtra("correctas",respuestasCorrectas);
+                    irPantalla2.putExtra("incorrectas",respuestasIncorrectas);
+                    startActivity(irPantalla2);
+
+                }else{
+                    respuestasIncorrectas++;
+
+                    Intent irPantalla2 = new Intent(this, Pantalla2.class);
+                    irPantalla2.putExtra("correctas",respuestasCorrectas);
+                    irPantalla2.putExtra("incorrectas",respuestasIncorrectas);
+                    startActivity(irPantalla2);
+                }
+
+                if (Seleccion.equals(p3.getRespuestaCorrecta())) {
+
+                    respuestasCorrectas++;
+
+                    Intent irPantalla2 = new Intent(this, Pantalla2.class);
+                    irPantalla2.putExtra("correctas",respuestasCorrectas);
+                    irPantalla2.putExtra("incorrectas",respuestasIncorrectas);
+                    startActivity(irPantalla2);
+
+                }else{
+                    respuestasIncorrectas++;
+
+                    Intent irPantalla2 = new Intent(this, Pantalla2.class);
+                    irPantalla2.putExtra("correctas",respuestasCorrectas);
+                    irPantalla2.putExtra("incorrectas",respuestasIncorrectas);
+                    startActivity(irPantalla2);
+                }
+
+
+
             }else{
-                Toast.makeText(this, "No has seleccionado nada", Toast.LENGTH_LONG).show();
+                Toast.makeText(this, getResources().getString(R.string.NoSeleccion), Toast.LENGTH_LONG).show();
             }
 
 

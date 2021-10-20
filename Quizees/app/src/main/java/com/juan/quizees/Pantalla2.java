@@ -15,8 +15,15 @@ public class Pantalla2 extends AppCompatActivity {
 
         Button btnSiguiente = findViewById(R.id.buttonSigueinte);
 
+        Bundle extras = getIntent().getExtras();
+
+        int correctas = extras.getInt("correctas");
+        int incorrectas = extras.getInt("incorrectas");
+
         btnSiguiente.setOnClickListener(view -> {
             Intent irPantalla1 = new Intent(this, MainActivity.class);
+            irPantalla1.putExtra("aciertos",correctas);
+            irPantalla1.putExtra("errores",incorrectas);
             startActivity(irPantalla1);
         });
 
