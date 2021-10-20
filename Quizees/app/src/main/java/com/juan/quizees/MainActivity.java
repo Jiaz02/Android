@@ -1,6 +1,7 @@
 package com.juan.quizees;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,6 +9,7 @@ import android.os.SystemClock;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
+import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
@@ -22,23 +24,28 @@ public class MainActivity extends AppCompatActivity {
     private int respuestasIncorrectas = 0;
     private String Seleccion="";
     private boolean avanzar=false;
+    ImageView movileImageview;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        SystemClock.sleep(4000);
 
+//el problema es que nunca entra en el if
         if(respuestasCorrectas+respuestasIncorrectas!=0) {
             Bundle extras = getIntent().getExtras();
             respuestasCorrectas = extras.getInt("aciertos");
             System.out.println(respuestasCorrectas);
             respuestasIncorrectas = extras.getInt("errores");
             System.out.println(respuestasIncorrectas);
+        }else {
+            SystemClock.sleep(4000);
         }
 
         TextView idPregunta=findViewById(R.id.idNumPregunta);
         TextView pregunta = findViewById(R.id.idPregunta);
 
+        movileImageview= findViewById(R.id.imageView1);
+        int imageId;
         RadioGroup rp = findViewById(R.id.RadioRespuesta);
         RadioButton rp1 = findViewById(R.id.radioButtonRespuesta1);
         RadioButton rp2 = findViewById(R.id.radioButtonRespuesta2);
@@ -69,25 +76,41 @@ public class MainActivity extends AppCompatActivity {
 
         switch (respuestasCorrectas+respuestasIncorrectas){
             case 0:
+                imageId=R.drawable.logo;
                 idPregunta.setText(getResources().getString(R.string.NumPregunta));
                 pregunta.setText(p1.getPregunta());
                 rp1.setText(p1.getRespuesta1());
                 rp2.setText(p1.getRespuesta2());
                 rp3.setText(p1.getRespuesta3());
+
+                if(imageId!=0){
+                    movileImageview.setImageDrawable(ContextCompat.getDrawable(this,imageId));
+                }
+
                 break;
             case 1:
+                imageId=R.drawable.paradoja;
                 idPregunta.setText(getResources().getString(R.string.NumPregunta2));
                 pregunta.setText(p2.getPregunta());
                 rp1.setText(p2.getRespuesta1());
                 rp2.setText(p2.getRespuesta2());
                 rp3.setText(p2.getRespuesta3());
+
+                if(imageId!=0){
+                    movileImageview.setImageDrawable(ContextCompat.getDrawable(this,imageId));
+                }
                 break;
             case 2:
+                imageId=R.drawable.bulbasaur;
                 idPregunta.setText(getResources().getString(R.string.NumPregunta3));
                 pregunta.setText(p3.getPregunta());
                 rp1.setText(p3.getRespuesta1());
                 rp2.setText(p3.getRespuesta2());
                 rp3.setText(p3.getRespuesta3());
+
+                if(imageId!=0){
+                    movileImageview.setImageDrawable(ContextCompat.getDrawable(this,imageId));
+                }
                 break;
         }
 
