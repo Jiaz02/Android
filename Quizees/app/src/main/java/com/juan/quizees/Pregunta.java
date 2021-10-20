@@ -4,10 +4,13 @@ import java.util.Arrays;
 
 public class Pregunta {
 
-    public Pregunta(int numero, String pregunta, String[] respuestasPregunta, String respuestaCorrecta) {
+
+    public Pregunta(int numero, String pregunta, String respuesta1, String respuesta2, String respuesta3, String respuestaCorrecta) {
         this.numero = numero;
         this.pregunta = pregunta;
-        this.respuestasPregunta = respuestasPregunta;
+        this.respuesta1 = respuesta1;
+        this.respuesta2 = respuesta2;
+        this.respuesta3 = respuesta3;
         this.respuestaCorrecta = respuestaCorrecta;
     }
 
@@ -27,12 +30,28 @@ public class Pregunta {
         this.pregunta = pregunta;
     }
 
-    public String[] getRespuestasPregunta() {
-        return respuestasPregunta;
+    public String getRespuesta1() {
+        return respuesta1;
     }
 
-    public void setRespuestasPregunta(String[] respuestasPregunta) {
-        this.respuestasPregunta = respuestasPregunta;
+    public void setRespuesta1(String respuesta1) {
+        this.respuesta1 = respuesta1;
+    }
+
+    public String getRespuesta2() {
+        return respuesta2;
+    }
+
+    public void setRespuesta2(String respuesta2) {
+        this.respuesta2 = respuesta2;
+    }
+
+    public String getRespuesta3() {
+        return respuesta3;
+    }
+
+    public void setRespuesta3(String respuesta3) {
+        this.respuesta3 = respuesta3;
     }
 
     public String getRespuestaCorrecta() {
@@ -48,14 +67,18 @@ public class Pregunta {
         return "Pregunta{" +
                 "numero=" + numero +
                 ", pregunta='" + pregunta + '\'' +
-                ", respuestasPregunta=" + Arrays.toString(respuestasPregunta) +
+                ", respuesta1='" + respuesta1 + '\'' +
+                ", respuesta2='" + respuesta2 + '\'' +
+                ", respuesta3='" + respuesta3 + '\'' +
                 ", respuestaCorrecta='" + respuestaCorrecta + '\'' +
                 '}';
     }
 
     private int numero;
     private String pregunta;
-    private String[] respuestasPregunta = new String[3];
+    private String respuesta1;
+    private String respuesta2;
+    private String respuesta3;
     private String respuestaCorrecta;
 
 
