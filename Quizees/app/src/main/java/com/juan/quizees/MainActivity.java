@@ -20,8 +20,8 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
     public ArrayList<Pregunta> preguntas = new ArrayList<Pregunta>();
-    private int respuestasCorrectas = 0;
-    private int respuestasIncorrectas = 0;
+    private int respuestasCorrectas ;
+    private int respuestasIncorrectas ;
     private String Seleccion="";
     private boolean avanzar=false;
     ImageView movileImageview;
@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
         respuestasIncorrectas = extras.getInt("errores");
         System.out.println(respuestasIncorrectas);
 
-//no muestra las nuevas preguntas ni las imagenes del splash
+//no muestra las imagenes del splash
 
         if(respuestasCorrectas+respuestasIncorrectas==0) {
             SystemClock.sleep(4000);
@@ -128,13 +128,38 @@ public class MainActivity extends AppCompatActivity {
                     startActivity(irPantalla2);
 
                 }else{
-                    respuestasIncorrectas++;
+                    if (Seleccion.equals(p2.getRespuestaCorrecta())) {
 
-                    Intent irPantalla2 = new Intent(this, Pantalla2.class);
-                    irPantalla2.putExtra("correctas",respuestasCorrectas);
-                    irPantalla2.putExtra("incorrectas",respuestasIncorrectas);
-                    startActivity(irPantalla2);
+                        respuestasCorrectas++;
+
+                        Intent irPantalla2 = new Intent(this, Pantalla2.class);
+                        irPantalla2.putExtra("correctas",respuestasCorrectas);
+                        irPantalla2.putExtra("incorrectas",respuestasIncorrectas);
+                        startActivity(irPantalla2);
+
+                    }else{
+                        if (Seleccion.equals(p3.getRespuestaCorrecta())) {
+
+                            respuestasCorrectas++;
+
+                            Intent irPantalla2 = new Intent(this, Pantalla2.class);
+                            irPantalla2.putExtra("correctas",respuestasCorrectas);
+                            irPantalla2.putExtra("incorrectas",respuestasIncorrectas);
+                            startActivity(irPantalla2);
+
+                        }else{
+                            respuestasIncorrectas++;
+
+                            Intent irPantalla2 = new Intent(this, Pantalla2.class);
+                            irPantalla2.putExtra("correctas",respuestasCorrectas);
+                            irPantalla2.putExtra("incorrectas",respuestasIncorrectas);
+                            startActivity(irPantalla2);
+                        }
+
+                    }
+
                 }
+                /*
                 if (Seleccion.equals(p2.getRespuestaCorrecta())) {
 
                     respuestasCorrectas++;
@@ -170,7 +195,7 @@ public class MainActivity extends AppCompatActivity {
                     irPantalla2.putExtra("incorrectas",respuestasIncorrectas);
                     startActivity(irPantalla2);
                 }
-
+*/
 
 
             }else{
