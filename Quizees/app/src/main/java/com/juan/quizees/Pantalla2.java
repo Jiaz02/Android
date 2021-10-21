@@ -25,7 +25,7 @@ public class Pantalla2 extends AppCompatActivity {
         int incorrectas = extras.getInt("incorrectas");
 
         if(correctas+incorrectas==3) {
-            texto.setText(getResources().getString(R.string.felicidades));
+            texto.setText(getResources().getString(R.string.felicidades)+correctas+"/"+3);
             btnSiguiente.setText(getResources().getString(R.string.reinicio));
 
         }
