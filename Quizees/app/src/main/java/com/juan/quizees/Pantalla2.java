@@ -23,11 +23,28 @@ public class Pantalla2 extends AppCompatActivity {
         int correctas = extras.getInt("correctas");
         int incorrectas = extras.getInt("incorrectas");
 
+        if(correctas+incorrectas==3) {
+            btnSiguiente.setText(getResources().getString(R.string.reinicio));
+
+        }
+
+
         btnSiguiente.setOnClickListener(view -> {
-            Intent irPantalla1 = new Intent(this, MainActivity.class);
-            irPantalla1.putExtra("aciertos",correctas);
-            irPantalla1.putExtra("errores",incorrectas);
-            startActivity(irPantalla1);
+            if(correctas+incorrectas!=3) {
+                Intent irPantalla1 = new Intent(this, MainActivity.class);
+                irPantalla1.putExtra("aciertos", correctas);
+                irPantalla1.putExtra("errores", incorrectas);
+                startActivity(irPantalla1);
+            }
+            else {
+                if(correctas+incorrectas==3) {
+
+                    Intent irPantalla1 = new Intent(this, MainActivity.class);
+                    irPantalla1.putExtra("aciertos", 0);
+                    irPantalla1.putExtra("errores", 0);
+                    startActivity(irPantalla1);
+                }
+            }
         });
 
     }
