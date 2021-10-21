@@ -24,7 +24,8 @@
     <string name="continuar">Siguiente</string>
 
     <string name="cargando">Esta cargando la wea</string>
-    <string name="NoSeleccion">No has seleccionado la respuesta correcta</string>
+    <string name="NoSeleccion">No has seleccionado nada</string>
     <string name="reinicio">Volver a empezar</string>
     <string name="felicidades">Felicidaes, terminaste esta shit</string>
+    <string name="Hasfallado">Esa respuesta no es</string>
 </resources>

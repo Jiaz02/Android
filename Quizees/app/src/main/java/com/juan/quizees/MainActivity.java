@@ -145,6 +145,8 @@ public class MainActivity extends AppCompatActivity {
                             startActivity(irPantalla2);
 
 
+                        }else{
+                            Toast.makeText(this, getResources().getString(R.string.Hasfallado), Toast.LENGTH_LONG).show();
                         }
 
                     }
