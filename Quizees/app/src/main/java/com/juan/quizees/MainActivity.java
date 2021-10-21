@@ -30,14 +30,15 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-//el problema es que nunca entra en el if
-        if(respuestasCorrectas+respuestasIncorrectas!=0) {
-            Bundle extras = getIntent().getExtras();
-            respuestasCorrectas = extras.getInt("aciertos");
-            System.out.println(respuestasCorrectas);
-            respuestasIncorrectas = extras.getInt("errores");
-            System.out.println(respuestasIncorrectas);
-        }else {
+        Bundle extras = getIntent().getExtras();
+        respuestasCorrectas = extras.getInt("aciertos");
+        System.out.println(respuestasCorrectas);
+        respuestasIncorrectas = extras.getInt("errores");
+        System.out.println(respuestasIncorrectas);
+
+//no muestra las nuevas preguntas ni las imagenes del splash
+
+        if(respuestasCorrectas+respuestasIncorrectas==0) {
             SystemClock.sleep(4000);
         }
 
