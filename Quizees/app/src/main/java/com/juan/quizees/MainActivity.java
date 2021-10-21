@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
     private String Seleccion="";
     private boolean avanzar=false;
     ImageView movileImageview;
+    private boolean esInicio=false;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,13 +36,13 @@ public class MainActivity extends AppCompatActivity {
         System.out.println(respuestasCorrectas);
         respuestasIncorrectas = extras.getInt("errores");
         System.out.println(respuestasIncorrectas);
-
+        esInicio=extras.getBoolean("esinicio");
 //no muestra las imagenes del splash
 
-        if(respuestasCorrectas+respuestasIncorrectas==0) {
+        if(esInicio) {
             SystemClock.sleep(4000);
         }
-
+//inicializamos los objetos del xml
         TextView idPregunta=findViewById(R.id.idNumPregunta);
         TextView pregunta = findViewById(R.id.idPregunta);
 
@@ -53,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
         RadioButton rp3 = findViewById(R.id.radioButtonRespuesta3);
 
         Button btnSend = findViewById(R.id.buttonEnviar);
-
+//creamos un objeto pregunta por cada pregunta que queramos añadir al juego
         String aux1=getResources().getString(R.string.Respuesta1);
         String aux2=getResources().getString(R.string.Respuesta2);
         String aux3=getResources().getString(R.string.Respuesta3);
@@ -75,6 +76,7 @@ public class MainActivity extends AppCompatActivity {
         Pregunta p3= new Pregunta(3,aux4,aux1,aux2,aux3,aux1);
         preguntas.add(p3);
 
+        //en funcion del total de preguntas que se lleven se cambian los valores a una pregunta u otra
         switch (respuestasCorrectas+respuestasIncorrectas){
             case 0:
                 imageId=R.drawable.logo;
@@ -117,7 +119,8 @@ public class MainActivity extends AppCompatActivity {
 
         btnSend.setOnClickListener(view -> {
             if(avanzar) {
-
+//se se puede avanzar procesamos la seleccion
+                //si es igual la respuesta de la pregunta 1 se hace una cosa sino una serie de sentencias que comparan con las otras preguntas y cambian al siguiente activity.
                 if (Seleccion.equals(p1.getRespuestaCorrecta())) {
 
                     respuestasCorrectas++;
@@ -160,7 +163,7 @@ public class MainActivity extends AppCompatActivity {
 
                 }
 
-
+//mensajito como que no hay nada seleccionado
             }else{
                 Toast.makeText(this, getResources().getString(R.string.NoSeleccion), Toast.LENGTH_LONG).show();
             }
@@ -172,6 +175,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void clickOnAnswer(View view) {
         boolean isChecked = ((RadioButton) view).isChecked();
+        //guardamos la seleccion del usuario a la vez que decimos que hay algo selecionado gracias a avanzar
         switch (view.getId()){
             case R.id.radioButtonRespuesta1:
                 Seleccion= getResources().getString(R.string.Respuesta1);

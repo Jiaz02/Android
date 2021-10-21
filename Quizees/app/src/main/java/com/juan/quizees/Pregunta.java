@@ -3,7 +3,7 @@ package com.juan.quizees;
 import java.util.Arrays;
 
 public class Pregunta {
-
+//clase que sirve para almacenar las distintas preguntas.
 
     public Pregunta(int numero, String pregunta, String respuesta1, String respuesta2, String respuesta3, String respuestaCorrecta) {
         this.numero = numero;
