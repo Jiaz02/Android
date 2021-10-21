@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 public class Pantalla2 extends AppCompatActivity {
 
@@ -15,7 +16,7 @@ public class Pantalla2 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pantalla2);
-
+        TextView texto = findViewById(R.id.idFinal);
         Button btnSiguiente = findViewById(R.id.buttonSigueinte);
 
         Bundle extras = getIntent().getExtras();
@@ -24,6 +25,7 @@ public class Pantalla2 extends AppCompatActivity {
         int incorrectas = extras.getInt("incorrectas");
 
         if(correctas+incorrectas==3) {
+            texto.setText(getResources().getString(R.string.felicidades));
             btnSiguiente.setText(getResources().getString(R.string.reinicio));
 
         }

@@ -159,43 +159,6 @@ public class MainActivity extends AppCompatActivity {
                     }
 
                 }
-                /*
-                if (Seleccion.equals(p2.getRespuestaCorrecta())) {
-
-                    respuestasCorrectas++;
-
-                    Intent irPantalla2 = new Intent(this, Pantalla2.class);
-                    irPantalla2.putExtra("correctas",respuestasCorrectas);
-                    irPantalla2.putExtra("incorrectas",respuestasIncorrectas);
-                    startActivity(irPantalla2);
-
-                }else{
-                    respuestasIncorrectas++;
-
-                    Intent irPantalla2 = new Intent(this, Pantalla2.class);
-                    irPantalla2.putExtra("correctas",respuestasCorrectas);
-                    irPantalla2.putExtra("incorrectas",respuestasIncorrectas);
-                    startActivity(irPantalla2);
-                }
-
-                if (Seleccion.equals(p3.getRespuestaCorrecta())) {
-
-                    respuestasCorrectas++;
-
-                    Intent irPantalla2 = new Intent(this, Pantalla2.class);
-                    irPantalla2.putExtra("correctas",respuestasCorrectas);
-                    irPantalla2.putExtra("incorrectas",respuestasIncorrectas);
-                    startActivity(irPantalla2);
-
-                }else{
-                    respuestasIncorrectas++;
-
-                    Intent irPantalla2 = new Intent(this, Pantalla2.class);
-                    irPantalla2.putExtra("correctas",respuestasCorrectas);
-                    irPantalla2.putExtra("incorrectas",respuestasIncorrectas);
-                    startActivity(irPantalla2);
-                }
-*/
 
 
             }else{

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Quizzes</string>
+    <string name="NumPregunta">1/3</string>
+    <string name="NumPregunta2">2/3</string>
+    <string name="NumPregunta3">3/3</string>
+
+    <string name="Pregunta">Can you survive if you felt into a dark hole?</string>
+    <string name="Respuesta1">Yes</string>
+    <string name="Respuesta2">No</string>
+    <string name="Respuesta3">Only if it is the beautiful person who created this</string>
+
+    <string name="Pregunta2">What happens if an immovable object crash with an unstoppable one?</string>
+    <string name="Respuesta4">Nothing</string>
+    <string name="Respuesta5">Both give in</string>
+    <string name="Respuesta6">A fault is generated in the matrix</string>
+
+    <string name="Pregunta3">What is more aerodynamic?</string>
+    <string name="Respuesta7">A cow</string>
+    <string name="Respuesta8">A goat</string>
+    <string name="Respuesta9">A Bulbasaur</string>
+
+    <string name="btnEnviar">Send</string>
+    <string name="Final">Jaja Nais!! :)</string>
+    <string name="continuar">Next</string>
+
+    <string name="cargando">This shit is charging</string>
+    <string name="NoSeleccion">You has not selected anything</string>
+    <string name="reinicio">Start again</string>
+    <string name="felicidades">Congratulation, you have finished that shit</string>
+</resources>
