@@ -26,13 +26,11 @@ public class SplashActivity extends AppCompatActivity {
         }
 //enviamos 0 a correctas e incorrectas para que pueda iniciar el juego
         int correctas = 0;
-        int incorrectas = 0;
         boolean esInicio=true;
 
         Intent intent = new Intent(SplashActivity.this, MainActivity.class);
 
         intent.putExtra("aciertos",correctas);
-        intent.putExtra("errores",incorrectas);
         intent.putExtra("esinicio",esInicio);
 
 

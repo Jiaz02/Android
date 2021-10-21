@@ -25,7 +25,7 @@
     <string name="continuar">Next</string>
 
     <string name="cargando">This shit is charging</string>
-    <string name="NoSeleccion">You has not selected anything</string>
+    <string name="NoSeleccion">You has not selected the correct answer</string>
     <string name="reinicio">Start again</string>
     <string name="felicidades">Congratulation, you have finished that shit</string>
 </resources>

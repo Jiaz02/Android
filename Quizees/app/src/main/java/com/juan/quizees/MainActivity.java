@@ -21,7 +21,6 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity {
     public ArrayList<Pregunta> preguntas = new ArrayList<Pregunta>();
     private int respuestasCorrectas ;
-    private int respuestasIncorrectas ;
     private String Seleccion="";
     private boolean avanzar=false;
     ImageView movileImageview;
@@ -34,8 +33,6 @@ public class MainActivity extends AppCompatActivity {
         Bundle extras = getIntent().getExtras();
         respuestasCorrectas = extras.getInt("aciertos");
         System.out.println(respuestasCorrectas);
-        respuestasIncorrectas = extras.getInt("errores");
-        System.out.println(respuestasIncorrectas);
         esInicio=extras.getBoolean("esinicio");
 //no muestra las imagenes del splash
 
@@ -77,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
         preguntas.add(p3);
 
         //en funcion del total de preguntas que se lleven se cambian los valores a una pregunta u otra
-        switch (respuestasCorrectas+respuestasIncorrectas){
+        switch (respuestasCorrectas){
             case 0:
                 imageId=R.drawable.logo;
                 idPregunta.setText(getResources().getString(R.string.NumPregunta));
@@ -127,47 +124,36 @@ public class MainActivity extends AppCompatActivity {
 
                     Intent irPantalla2 = new Intent(this, Pantalla2.class);
                     irPantalla2.putExtra("correctas",respuestasCorrectas);
-                    irPantalla2.putExtra("incorrectas",respuestasIncorrectas);
                     startActivity(irPantalla2);
 
-                }else{
+                }else {
                     if (Seleccion.equals(p2.getRespuestaCorrecta())) {
 
                         respuestasCorrectas++;
 
                         Intent irPantalla2 = new Intent(this, Pantalla2.class);
-                        irPantalla2.putExtra("correctas",respuestasCorrectas);
-                        irPantalla2.putExtra("incorrectas",respuestasIncorrectas);
+                        irPantalla2.putExtra("correctas", respuestasCorrectas);
                         startActivity(irPantalla2);
 
-                    }else{
+                    } else {
                         if (Seleccion.equals(p3.getRespuestaCorrecta())) {
 
                             respuestasCorrectas++;
 
                             Intent irPantalla2 = new Intent(this, Pantalla2.class);
-                            irPantalla2.putExtra("correctas",respuestasCorrectas);
-                            irPantalla2.putExtra("incorrectas",respuestasIncorrectas);
+                            irPantalla2.putExtra("correctas", respuestasCorrectas);
                             startActivity(irPantalla2);
 
-                        }else{
-                            respuestasIncorrectas++;
 
-                            Intent irPantalla2 = new Intent(this, Pantalla2.class);
-                            irPantalla2.putExtra("correctas",respuestasCorrectas);
-                            irPantalla2.putExtra("incorrectas",respuestasIncorrectas);
-                            startActivity(irPantalla2);
                         }
 
                     }
-
                 }
-
 //mensajito como que no hay nada seleccionado
-            }else{
-                Toast.makeText(this, getResources().getString(R.string.NoSeleccion), Toast.LENGTH_LONG).show();
-            }
-
+                }
+            else{
+                        Toast.makeText(this, getResources().getString(R.string.NoSeleccion), Toast.LENGTH_LONG).show();
+                    }
 
         });
 
@@ -175,18 +161,22 @@ public class MainActivity extends AppCompatActivity {
 
     public void clickOnAnswer(View view) {
         boolean isChecked = ((RadioButton) view).isChecked();
+        RadioButton rp1 = findViewById(R.id.radioButtonRespuesta1);
+        RadioButton rp2 = findViewById(R.id.radioButtonRespuesta2);
+        RadioButton rp3 = findViewById(R.id.radioButtonRespuesta3);
+
         //guardamos la seleccion del usuario a la vez que decimos que hay algo selecionado gracias a avanzar
         switch (view.getId()){
             case R.id.radioButtonRespuesta1:
-                Seleccion= getResources().getString(R.string.Respuesta1);
+                Seleccion= rp1.getText().toString();
                 avanzar=true;
                 break;
             case R.id.radioButtonRespuesta2:
-                Seleccion= getResources().getString(R.string.Respuesta2);
+                Seleccion= rp2.getText().toString();
                 avanzar=true;
                 break;
             case R.id.radioButtonRespuesta3:
-                Seleccion= getResources().getString(R.string.Respuesta3);
+                Seleccion= rp3.getText().toString();
                 avanzar=true;
                 break;
         }
