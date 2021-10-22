@@ -11,8 +11,7 @@
         android:theme="@style/Theme.Quizees">
         <activity
             android:name=".SplashActivity"
-            android:exported="true"
-            android:theme="@style/SplashScreen">
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

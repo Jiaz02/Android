@@ -16,27 +16,28 @@ public class SplashActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
+
         movileImageview= findViewById(R.id.imageView);
         int imageId;
 //le asignamos valor a la foto del splash
         imageId=R.drawable.yisus;
-
         if(imageId!=0){
             movileImageview.setImageDrawable(ContextCompat.getDrawable(this,imageId));
         }
+
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
 //enviamos 0 a correctas e incorrectas para que pueda iniciar el juego
-        int correctas = 0;
-        boolean esInicio=true;
+                int correctas = 0;
+                Intent intent = new Intent(SplashActivity.this,MainActivity.class);
+                intent.putExtra("aciertos",correctas);
+                startActivity(intent);
+                finish();
 
-        Intent intent = new Intent(SplashActivity.this, MainActivity.class);
+            }
+        },4000);
 
-        intent.putExtra("aciertos",correctas);
-        intent.putExtra("esinicio",esInicio);
-
-
-        startActivity(intent);
-        //terminamos el activity para que pueda volver a mostrarse
-        finish();
 
 
     }

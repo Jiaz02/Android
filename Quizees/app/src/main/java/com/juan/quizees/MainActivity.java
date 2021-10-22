@@ -33,12 +33,9 @@ public class MainActivity extends AppCompatActivity {
         Bundle extras = getIntent().getExtras();
         respuestasCorrectas = extras.getInt("aciertos");
         System.out.println(respuestasCorrectas);
-        esInicio=extras.getBoolean("esinicio");
 //no muestra las imagenes del splash
 
-        if(esInicio) {
-            SystemClock.sleep(4000);
-        }
+
 //inicializamos los objetos del xml
         TextView idPregunta=findViewById(R.id.idNumPregunta);
         TextView pregunta = findViewById(R.id.idPregunta);
