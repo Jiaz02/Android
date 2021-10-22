@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Cops &amp; caps</string>
+    <string name="Clasico">100 preguntas en 8 min</string>
+    <string name="ListaAmigos">Lista de amigos</string>
+    <string name="EdadCanina">Edad Canina</string>
+    <string name="Quizzes">Quizzes</string>
+    <string name="Galeria">Galleria</string>
+    <string name="Mapas">Mapas</string>
+    <string name="Restaurantes">Restaurantes</string>
+    <string name="Herramientas">Herramientas</string>
+</resources>
