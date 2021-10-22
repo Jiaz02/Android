@@ -14,6 +14,7 @@ import com.juan.dashboard.activities.Activity_Restaurantes;
 import com.juan.dashboard.activities.Activity_Setings;
 import com.juan.dashboard.activities.Amigos_Activity;
 import com.juan.dashboard.activities.Calculadora_Activity;
+import com.juan.dashboard.activities.SplashActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -47,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
         });
         rellay_quizzes.setOnClickListener(view -> {
-            Intent intent = new Intent(this, Activity_Quizzes.class);
+            Intent intent = new Intent(this, SplashActivity.class);
             startActivity(intent);
         });
         rellay_galeria.setOnClickListener(view -> {

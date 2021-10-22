@@ -8,4 +8,53 @@
     <string name="Mapas">Mapas</string>
     <string name="Restaurantes">Restaurantes</string>
     <string name="Herramientas">Herramientas</string>
+    <string name="msg_toast">Has Introducido un campo vacio</string>
+    <string name="msg_toast2">No se puede dividir entre 0</string>
+    <string name="appCalculadora">Mi Calculadora</string>
+    <string name="inicio">Mi Calculadora</string>
+    <string name="num1">Introduce el Primer Numero</string>
+    <string name="num2">Introduce el Segundo Numero</string>
+    <string name="numuno">Num 1</string>
+    <string name="numdos">Num 2</string>
+    <string name="btnSuma">+</string>
+    <string name="btnResta">-</string>
+    <string name="btnMulti">X</string>
+    <string name="btnDiv">/</string>
+    <string name="texto_resultado">El resultado de la operacion es:</string>
+
+    <string name="pregunta_ppal">¿Cuántos años tienes?</string>
+    <string name="introdu_edad">Introduce tu edad</string>
+    <string name="btn_calcular">Calcular</string>
+
+    <string name="texto_resultado2">Si fueras perro, tu edad sería %d años</string>
+    <string name="msg_toast3">No has introducido ningún número.</string>
+
+    <string name="NumPregunta">1/3</string>
+    <string name="NumPregunta2">2/3</string>
+    <string name="NumPregunta3">3/3</string>
+
+    <string name="Pregunta">¿Se puede sobrevivir si caes en un agujero negro?</string>
+    <string name="Respuesta1">Si</string>
+    <string name="Respuesta2">No</string>
+    <string name="Respuesta3">Solo si es la hermosa persona que ha creado esto</string>
+
+    <string name="Pregunta2">¿Que pasa si un objeto inamovible choca con uno imparable?</string>
+    <string name="Respuesta4">Nada</string>
+    <string name="Respuesta5">Ambos ceden</string>
+    <string name="Respuesta6">Se genera una falla en la matrix</string>
+
+    <string name="Pregunta3">¿Que es mas aerodinamico?</string>
+    <string name="Respuesta7">Una vaca</string>
+    <string name="Respuesta8">Una cabra</string>
+    <string name="Respuesta9">Un Bulbasaur</string>
+
+    <string name="btnEnviar">Enviar</string>
+    <string name="Final">Jaja Nais!! :)</string>
+    <string name="continuar">Siguiente</string>
+
+    <string name="cargando">Esta cargando la wea</string>
+    <string name="NoSeleccion">No has seleccionado nada</string>
+    <string name="reinicio">Volver a empezar</string>
+    <string name="felicidades">Felicidaes, terminaste esta shit</string>
+    <string name="Hasfallado">Esa respuesta no es</string>
 </resources>

@@ -51,6 +51,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".activities.SplashActivity"
+            android:exported="true">
+        </activity>
+        <activity android:name=".activities.Pantalla2"/>
     </application>
 
 </manifest>
