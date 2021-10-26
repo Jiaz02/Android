@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Marcador Basket</string>
+    <string name="Local">Local</string>
+    <string name="PuntosLocal">0</string>
+    <string name="Visitante">Visitante</string>
+    <string name="puntosVisitante">0</string>
+</resources>
