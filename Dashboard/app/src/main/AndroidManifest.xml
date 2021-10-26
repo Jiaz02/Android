@@ -10,37 +10,55 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Dashboard">
         <activity
+            android:name=".Splash"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity2"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".activities.Activity_Setings"
             android:exported="true"
-            android:theme="@style/SettingsTheme"/>
+            android:theme="@style/SettingsTheme" />
         <activity
             android:name=".activities.Activity_Restaurantes"
             android:exported="true"
-            android:theme="@style/RestaurantesTheme"/>
+            android:theme="@style/RestaurantesTheme" />
         <activity
             android:name=".activities.Activity_Mapas"
             android:exported="true"
-            android:theme="@style/MapasTheme"/>
+            android:theme="@style/MapasTheme" />
         <activity
             android:name=".activities.Activity_Galeria"
             android:exported="true"
-            android:theme="@style/GaleriaTheme"/>
+            android:theme="@style/GaleriaTheme" />
         <activity
             android:name=".activities.Activity_Quizzes"
             android:exported="true"
-            android:theme="@style/QuizzesTheme"/>
+            android:theme="@style/QuizzesTheme" />
         <activity
             android:name=".activities.Activity_Edad"
             android:exported="true"
-            android:theme="@style/PerreteTheme"/>
+            android:theme="@style/PerreteTheme" />
         <activity
             android:name=".activities.Amigos_Activity"
             android:exported="true"
-            android:theme="@style/AmigosTheme"/>
+            android:theme="@style/AmigosTheme" />
         <activity
             android:name=".activities.Calculadora_Activity"
             android:exported="true"
-            android:theme="@style/CalculadoraTheme"/>
+            android:theme="@style/CalculadoraTheme" />
         <activity
             android:name=".MainActivity"
             android:exported="true"
@@ -53,9 +71,8 @@
         </activity>
         <activity
             android:name=".activities.SplashActivity"
-            android:exported="true">
-        </activity>
-        <activity android:name=".activities.Pantalla2"/>
+            android:exported="true" />
+        <activity android:name=".activities.Pantalla2" />
     </application>
 
 </manifest>
