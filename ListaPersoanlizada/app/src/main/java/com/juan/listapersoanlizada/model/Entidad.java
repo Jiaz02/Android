@@ -1,6 +1,8 @@
 package com.juan.listapersoanlizada.model;
 
-public class Entidad {
+import java.io.Serializable;
+
+public class Entidad implements Serializable {
     public Entidad(int imgFoto, String titulo, String contenido) {
         this.imgFoto = imgFoto;
         this.titulo = titulo;
