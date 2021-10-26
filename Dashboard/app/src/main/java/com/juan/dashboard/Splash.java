@@ -7,7 +7,6 @@ import android.os.Bundle;
 import android.os.Handler;
 
 import com.juan.dashboard.activities.Activity_Quizzes;
-import com.juan.dashboard.activities.SplashActivity;
 
 public class Splash extends AppCompatActivity {
 
