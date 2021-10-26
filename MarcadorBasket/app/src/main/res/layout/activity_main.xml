@@ -11,6 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/Local"
+        android:textColor="@color/black"
         android:textSize="48dp"
         app:layout_constraintBottom_toTopOf="@+id/puntosLocal"
         app:layout_constraintHorizontal_bias="0.496"
@@ -24,6 +25,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/PuntosLocal"
+        android:textColor="@color/black"
         android:textSize="62dp"
         app:layout_constraintBottom_toTopOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="parent"
@@ -49,6 +51,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/puntosVisitante"
+        android:textColor="@color/black"
         android:textSize="62dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -61,41 +64,41 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/Visitante"
+        android:textColor="@color/black"
         android:textSize="48dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/PuntosVisitantes" />
 
-    <Button
+    <ImageButton
         android:id="@+id/buttonR1Local"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
-        android:text="-1"
+        android:layout_width="78dp"
+        android:layout_height="40dp"
+        android:src="@drawable/resta1"
         app:layout_constraintBottom_toTopOf="@+id/imageView"
         app:layout_constraintEnd_toStartOf="@+id/puntosLocal"
-        app:layout_constraintHorizontal_bias="0.382"
+        app:layout_constraintHorizontal_bias="0.29"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Local"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.467" />
 
-    <Button
+    <ImageButton
         android:id="@+id/buttonR1Visitante"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="68dp"
-        android:text="-1"
+        android:layout_width="78dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="72dp"
+        android:src="@drawable/resta1"
         app:layout_constraintBottom_toTopOf="@+id/Visitante"
         app:layout_constraintEnd_toStartOf="@+id/PuntosVisitantes"
-        app:layout_constraintHorizontal_bias="0.42"
+        app:layout_constraintHorizontal_bias="0.29"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <Button
+    <ImageButton
         android:id="@+id/buttonS1Local"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="+1"
+        android:layout_width="78dp"
+        android:layout_height="40dp"
+        android:src="@drawable/suma1"
         app:layout_constraintBottom_toTopOf="@+id/buttonS2Local"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.702"
@@ -103,33 +106,33 @@
         app:layout_constraintTop_toBottomOf="@+id/Local"
         app:layout_constraintVertical_bias="0.523" />
 
-    <Button
+    <ImageButton
         android:id="@+id/buttonS2Local"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="78dp"
+        android:layout_height="40dp"
+        android:src="@drawable/suma2"
         android:layout_marginBottom="24dp"
-        android:text="+2"
         app:layout_constraintBottom_toTopOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.702"
         app:layout_constraintStart_toEndOf="@+id/puntosLocal" />
 
-    <Button
+    <ImageButton
         android:id="@+id/buttonS1Visitante"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="78dp"
+        android:layout_height="40dp"
+        android:src="@drawable/suma1"
         android:layout_marginTop="20dp"
-        android:text="+1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.71"
         app:layout_constraintStart_toEndOf="@+id/PuntosVisitantes"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
-    <Button
+    <ImageButton
         android:id="@+id/buttonS2Visitante"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="+2"
+        android:layout_width="78dp"
+        android:layout_height="40dp"
+        android:src="@drawable/suma2"
         app:layout_constraintBottom_toTopOf="@+id/Visitante"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.71"
@@ -137,17 +140,29 @@
         app:layout_constraintTop_toBottomOf="@+id/buttonS1Visitante"
         app:layout_constraintVertical_bias="0.3" />
 
-    <Button
+    <ImageButton
         android:id="@+id/siguiente"
         android:layout_width="49dp"
         android:layout_height="49dp"
-        android:text=">"
+        android:src="@drawable/next"
         app:layout_constraintBottom_toTopOf="@+id/buttonS1Visitante"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.646"
         app:layout_constraintStart_toEndOf="@+id/imageView"
         app:layout_constraintTop_toBottomOf="@+id/buttonS2Local"
         app:layout_constraintVertical_bias="0.517" />
+
+    <ImageButton
+        android:id="@+id/Restore"
+        android:layout_width="49dp"
+        android:layout_height="49dp"
+        android:src="@drawable/ic_launcher_foreground"
+        app:layout_constraintBottom_toTopOf="@+id/buttonR1Visitante"
+        app:layout_constraintEnd_toStartOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.395"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonR1Local"
+        app:layout_constraintVertical_bias="0.485" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

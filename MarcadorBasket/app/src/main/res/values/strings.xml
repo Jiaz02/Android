@@ -4,4 +4,5 @@
     <string name="PuntosLocal">0</string>
     <string name="Visitante">Visitante</string>
     <string name="puntosVisitante">0</string>
+    <string name="Reset">R</string>
 </resources>
