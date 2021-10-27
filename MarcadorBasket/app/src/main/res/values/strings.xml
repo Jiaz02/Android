@@ -5,4 +5,6 @@
     <string name="Visitante">Visitante</string>
     <string name="puntosVisitante">0</string>
     <string name="Reset">R</string>
+    <string name="msg_toast">No puedes seguir restando</string>
+    <string name="LocalVisitante">Local-Visitante</string>
 </resources>
