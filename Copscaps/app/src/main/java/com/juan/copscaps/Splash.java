@@ -7,17 +7,28 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.widget.TextView;
 
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
 import java.util.ArrayList;
 import java.util.Random;
+import java.util.Scanner;
 
 public class Splash extends AppCompatActivity {
     ArrayList<String> Tips = new ArrayList<>();
+    File fichero = new File("com/juan/copscaps/data/palabras.txt");
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
+
+
+
+
+
+
         String consejo = "Recuerda que las agudas acabadas en -s, -n, o vocal se acentuan";
         Tips.add(consejo);
         consejo="Recuerda que debes acentuar las esdrújulas";
