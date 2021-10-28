@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //cogemos los elementos del xml
         TextView puntosLocal = findViewById(R.id.puntosLocal);
         TextView puntosVisitante = findViewById(R.id.PuntosVisitantes);
 
@@ -30,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
         ImageButton reset = findViewById(R.id.Restore);
 
 
-
+// si es restar 1 restamos 1 si el numero no es 0
         menos1Local.setOnClickListener( view -> {
             int puntuacionLocal = Integer.parseInt(puntosLocal.getText().toString());
             int nLocal = puntuacionLocal-1;
@@ -52,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(this, getString(R.string.msg_toast),Toast.LENGTH_LONG).show();
             }
         });
-
+//si es sumar, sumamos 1 o 2 al equipo correspondiente
         mas1Visitante.setOnClickListener( view -> {
             int puntuacionVisitante = Integer.parseInt(puntosVisitante.getText().toString());
             int nVisitante = puntuacionVisitante+1;
@@ -80,7 +81,7 @@ public class MainActivity extends AppCompatActivity {
             String local = String.valueOf(nLocal);
             puntosLocal.setText(local);
         });
-
+// hacemos el intent pasando las puntuaciones en el proceso
         next.setOnClickListener( view -> {
             int puntuacionLocal = Integer.parseInt(puntosLocal.getText().toString());
             int puntuacionVisitante = Integer.parseInt(puntosVisitante.getText().toString());
@@ -89,7 +90,7 @@ public class MainActivity extends AppCompatActivity {
             intent.putExtra("pvisitante",puntuacionVisitante);
             startActivity(intent);
         });
-
+//reseteamos a 0
         reset.setOnClickListener( view -> {
             puntosLocal.setText("0");
             puntosVisitante.setText("0");
