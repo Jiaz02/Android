@@ -1,12 +1,16 @@
 package com.juan.pokemonapp.fragments;
 
+import android.content.Context;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 
+import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 
 import com.juan.pokemonapp.R;
 
@@ -25,6 +29,8 @@ public class DetailFragment extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
+
+    private ImageView detailImageView;
 
     public DetailFragment() {
         // Required empty public constructor
@@ -48,6 +54,15 @@ public class DetailFragment extends Fragment {
         return fragment;
     }
 
+    public void setPokemonImage(int pokemonImageId){
+        //Establecemos la imagen que queremos poner en el detalle
+        detailImageView.setImageDrawable(ContextCompat.getDrawable(getActivity(),pokemonImageId));
+    }
+    public void playPokemonSound(int pokemonSoundId){
+        MediaPlayer mediaPlayer = MediaPlayer.create(getActivity(),pokemonSoundId);
+        mediaPlayer.start();
+    }
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -61,6 +76,8 @@ public class DetailFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_detail, container, false);
+        View view = inflater.inflate(R.layout.fragment_detail,container,false);
+        detailImageView=(ImageView) view.findViewById(R.id.pokemon_detail_imageView);
+        return view;
     }
 }
