@@ -13,6 +13,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 
 import com.juan.pokemonapp.R;
+import com.squareup.picasso.Picasso;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -54,9 +55,10 @@ public class DetailFragment extends Fragment {
         return fragment;
     }
 
-    public void setPokemonImage(int pokemonImageId){
+    public void setPokemonImage(String pokemonURL){
         //Establecemos la imagen que queremos poner en el detalle
-        detailImageView.setImageDrawable(ContextCompat.getDrawable(getActivity(),pokemonImageId));
+        //detailImageView.setImageDrawable(ContextCompat.getDrawable(getActivity(),pokemonImageId));
+        Picasso.get().load(pokemonURL).into(detailImageView);
     }
     public void playPokemonSound(int pokemonSoundId){
         MediaPlayer mediaPlayer = MediaPlayer.create(getActivity(),pokemonSoundId);
