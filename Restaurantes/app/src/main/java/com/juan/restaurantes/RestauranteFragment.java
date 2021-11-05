@@ -74,10 +74,6 @@ public class RestauranteFragment extends Fragment {
             } else {
                 recyclerView.setLayoutManager(new GridLayoutManager(context, mColumnCount));
             }
-            //
-            //
-            //
-            //
 
             //lista de elementos (Restaurante)
             restauranteList = new ArrayList<>();
