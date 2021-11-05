@@ -82,7 +82,7 @@ public class RestauranteFragment extends Fragment {
             //lista de elementos (Restaurante)
             restauranteList = new ArrayList<>();
             //añadimos los restaurantes
-            restauranteList.add(new Restaurante("Ichiraku Ramen","https://f.rpp-noticias.io/2019/04/04/423142_774142.png",4.0f,"La Hoja"));
+            restauranteList.add(new Restaurante("Ichiraku Ramen","https://f.rpp-noticias.io/2019/04/04/423142_774142.png",5.0f,"La Hoja"));
             restauranteList.add(new Restaurante("The Drunken Clam","https://spoilertime.com/wp-content/uploads/2017/10/b3.gif",4.5f,"Quahog"));
             restauranteList.add(new Restaurante("Maclaren's Pub","https://media-cdn.tripadvisor.com/media/photo-s/12/9b/3f/a2/ingresso-e-insegna-del.jpg",4.3f,"West 55th Street"));
             restauranteList.add(new Restaurante("Moe’s","https://spoilertime.com/wp-content/uploads/2017/10/b9.jpg",3.5f,"Springfield"));
