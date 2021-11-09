@@ -39,8 +39,6 @@ public class RestauranteFragment extends Fragment {
     public RestauranteFragment() {
     }
 
-    // TODO: Customize parameter initialization
-    @SuppressWarnings("unused")
     public static RestauranteFragment newInstance(int columnCount) {
         RestauranteFragment fragment = new RestauranteFragment();
         Bundle args = new Bundle();
