@@ -1,4 +1,4 @@
-package com.juan.dashboard.activities;
+package com.juan.dashboard.activities.model;
 
 public class Restaurante {
     public String getNombre() {

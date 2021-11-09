@@ -12,6 +12,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.juan.dashboard.R;
+import com.juan.dashboard.activities.model.Restaurante;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -85,8 +86,8 @@ public class RestauranteFragment extends Fragment {
             restauranteList.add(new Restaurante("Maclaren's Pub","https://media-cdn.tripadvisor.com/media/photo-s/12/9b/3f/a2/ingresso-e-insegna-del.jpg",4.3f,"West 55th Street"));
             restauranteList.add(new Restaurante("Moe’s","https://spoilertime.com/wp-content/uploads/2017/10/b9.jpg",3.5f,"Springfield"));
             restauranteList.add(new Restaurante("Los Pollos Hermanos","https://www.mitopbar.com/wp-content/uploads/2020/04/11213541395_4a4875a809_c.jpg",4.0f,"Albuquerque"));
-            restauranteList.add(new Restaurante("Roger's Place","http://images6.fanpop.com/image/photos/42700000/American-Dad-dolores-42764330-1920-1080.jpg",4.5f,"Desconocido"));
-            restauranteList.add(new Restaurante("Anteiku","http://pm1.narvii.com/6346/8c6ff34bca6ab496cdd2d74fa2770932c4187534_00.jpg",4.7f,"Tokyo"));
+            restauranteList.add(new Restaurante("Roger's Place","https://i.ytimg.com/vi/UZYtLOek_JQ/maxresdefault.jpg",4.5f,"Desconocido"));
+            restauranteList.add(new Restaurante("Anteiku","https://pm1.narvii.com/7795/85b78c39b70e895e5d83a866ae426765fae54044r4-750-375_00.jpg",4.7f,"Tokyo"));
             restauranteList.add(new Restaurante("Yukihira","https://i.imgur.com/HuGo6nW.png",3.0f,"Sumiredōri Shopping District"));
             restauranteList.add(new Restaurante("Hōjōrō","https://static.wikia.nocookie.net/shokugekinosoma/images/d/da/Hojoro.png/revision/latest/scale-to-width-down/350?cb=20151023161340&path-prefix=es",4.3f,"Barrio Chino Yokohama, Tokyo, Japón"));
             restauranteList.add(new Restaurante("Resort Tōtsuki","https://static.wikia.nocookie.net/shokugekinosoma/images/7/76/T%C5%8Dtsuki_Villa.png/revision/latest?cb=20180625052549&path-prefix=es",3.5f,"Desconocida"));

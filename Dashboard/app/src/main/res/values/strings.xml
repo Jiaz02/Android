@@ -57,4 +57,7 @@
     <string name="reinicio">Volver a empezar</string>
     <string name="felicidades">Felicidaes, terminaste esta shit</string>
     <string name="Hasfallado">Esa respuesta no es</string>
+    <string name="Musica">Musica</string>
+    <string name="Next">Siguiente</string>
+    <string name="Spotify">Spotify</string>
 </resources>
