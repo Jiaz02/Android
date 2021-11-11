@@ -1,6 +1,8 @@
 package com.juan.dashboard.activities.model;
 
-public class DiscoMusica {
+import java.io.Serializable;
+
+public class DiscoMusica implements Serializable {
     public DiscoMusica(String imgFoto, String nombre, String añoLanzamiento, String artista) {
         this.imgFoto = imgFoto;
         this.nombre = nombre;

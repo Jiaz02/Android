@@ -5,14 +5,12 @@ import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 import com.juan.dashboard.R;
-import com.juan.dashboard.activities.Activity_Musica;
 import com.juan.dashboard.activities.model.Activity_DetalleMusica;
 import com.juan.dashboard.activities.model.DiscoMusica;
 

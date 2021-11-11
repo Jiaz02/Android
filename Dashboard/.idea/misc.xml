@@ -3,10 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/PC/AndroidStudioProjects/Android/Dashboard/app/src/main/res/layout/activity_detalle_musica.xml" value="0.35260416666666666" />
-        <entry key="..\:/Users/PC/AndroidStudioProjects/Android/Dashboard/app/src/main/res/layout/activity_musica.xml" value="0.35260416666666666" />
-        <entry key="..\:/Users/PC/AndroidStudioProjects/Android/Dashboard/app/src/main/res/layout/lista_discos_musica.xml" value="0.35260416666666666" />
         <entry key="..\:/Users/damA/Desktop/Android/Dashboard/app/src/main/res/layout/activity_calculadora.xml" value="0.371875" />
+        <entry key="..\:/Users/damA/Desktop/Android/Dashboard/app/src/main/res/layout/activity_detalle_musica.xml" value="0.371875" />
         <entry key="..\:/Users/damA/Desktop/Android/Dashboard/app/src/main/res/layout/activity_edad.xml" value="0.371875" />
         <entry key="..\:/Users/damA/Desktop/Android/Dashboard/app/src/main/res/layout/activity_galeria.xml" value="0.371875" />
         <entry key="..\:/Users/damA/Desktop/Android/Dashboard/app/src/main/res/layout/activity_main.xml" value="0.2957427536231884" />

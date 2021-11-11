@@ -6,4 +6,45 @@
     android:layout_height="match_parent"
     tools:context=".activities.model.Activity_DetalleMusica">
 
+    <ImageView
+        android:id="@+id/portada"
+        android:layout_width="224dp"
+        android:layout_height="227dp"
+        android:layout_marginTop="16dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+    <TextView
+        android:id="@+id/txt_titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="@+id/portada"
+        app:layout_constraintStart_toStartOf="@+id/portada"
+        app:layout_constraintTop_toBottomOf="@+id/portada" />
+
+    <TextView
+        android:id="@+id/txt_autor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="@+id/txt_titulo"
+        app:layout_constraintStart_toStartOf="@+id/txt_titulo"
+        app:layout_constraintTop_toBottomOf="@+id/txt_titulo" />
+
+    <TextView
+        android:id="@+id/txt_fecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="@+id/txt_autor"
+        app:layout_constraintStart_toStartOf="@+id/txt_autor"
+        app:layout_constraintTop_toBottomOf="@+id/txt_autor" />
 </androidx.constraintlayout.widget.ConstraintLayout>
