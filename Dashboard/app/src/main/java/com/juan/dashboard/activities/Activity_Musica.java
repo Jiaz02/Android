@@ -1,12 +1,16 @@
 package com.juan.dashboard.activities;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.juan.dashboard.R;
 import com.juan.dashboard.activities.adaptadores.Adaptador;
+import com.juan.dashboard.activities.model.Activity_DetalleMusica;
 import com.juan.dashboard.activities.model.DiscoMusica;
 
 import java.util.ArrayList;
@@ -24,6 +28,8 @@ public class Activity_Musica extends AppCompatActivity {
         lvItem = findViewById(R.id.lvItem);
 
         llenarLista();
+
+
 
     }
 

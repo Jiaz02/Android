@@ -1,15 +1,19 @@
 package com.juan.dashboard.activities.adaptadores;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 import com.juan.dashboard.R;
+import com.juan.dashboard.activities.Activity_Musica;
+import com.juan.dashboard.activities.model.Activity_DetalleMusica;
 import com.juan.dashboard.activities.model.DiscoMusica;
 
 import java.util.ArrayList;
@@ -54,6 +58,13 @@ public class Adaptador extends BaseAdapter {
         Glide.with(context).load(discoMusica.getImgFoto()).into(imgFoto);
         txtNombreDisco.setText(discoMusica.getNombre());
         txtArtista.setText(discoMusica.getArtista());
+
+        convertView.setOnClickListener( v -> {
+
+            Intent intent = new Intent(context, Activity_DetalleMusica.class);
+            intent.putExtra("item",listDiscos);
+            context.startActivity(intent);
+        });
 
         return convertView;
     }

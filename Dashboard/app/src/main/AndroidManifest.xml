@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Dashboard">
         <activity
+            android:name=".activities.model.Activity_DetalleMusica"
+            android:exported="true" />
+        <activity
             android:name=".activities.Activity_Musica"
             android:exported="true" />
         <activity
