@@ -89,7 +89,7 @@ public class RestauranteFragment extends Fragment {
             restauranteList.add(new Restaurante("Roger's Place","https://i.ytimg.com/vi/UZYtLOek_JQ/maxresdefault.jpg",4.5f,"Desconocido"));
             restauranteList.add(new Restaurante("Anteiku","https://pm1.narvii.com/7795/85b78c39b70e895e5d83a866ae426765fae54044r4-750-375_00.jpg",4.7f,"Tokyo"));
             restauranteList.add(new Restaurante("Yukihira","https://i.imgur.com/HuGo6nW.png",3.0f,"Sumiredōri Shopping District"));
-            restauranteList.add(new Restaurante("Hōjōrō","https://static.wikia.nocookie.net/shokugekinosoma/images/d/da/Hojoro.png/revision/latest/scale-to-width-down/350?cb=20151023161340&path-prefix=es",4.3f,"Barrio Chino Yokohama, Tokyo, Japón"));
+            restauranteList.add(new Restaurante("Crustaceo Crugiente","http://3.bp.blogspot.com/--KWouEaPbto/U-jdomNokSI/AAAAAAAAAB8/8nPTlY1isKw/s1600/krusty-krub.jpg",4.3f,"Fondo de Bikini"));
             restauranteList.add(new Restaurante("Resort Tōtsuki","https://static.wikia.nocookie.net/shokugekinosoma/images/7/76/T%C5%8Dtsuki_Villa.png/revision/latest?cb=20180625052549&path-prefix=es",3.5f,"Desconocida"));
 
             // Asociamos el adaptador al RecyclerView

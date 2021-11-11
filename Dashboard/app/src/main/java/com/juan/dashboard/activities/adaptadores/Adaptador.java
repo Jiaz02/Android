@@ -51,7 +51,7 @@ public class Adaptador extends BaseAdapter {
         TextView txtNombreDisco = convertView.findViewById(R.id.txtNombreDisco);
         TextView txtArtista = convertView.findViewById(R.id.txtArtista);
 
-        Glide.with(context).load(discoMusica.getImgFoto()).into(imgFoto);
+        //Glide.with(context).load(discoMusica.getImgFoto()).into(imgFoto);
         txtNombreDisco.setText(discoMusica.getNombre());
         txtArtista.setText(discoMusica.getArtista());
 

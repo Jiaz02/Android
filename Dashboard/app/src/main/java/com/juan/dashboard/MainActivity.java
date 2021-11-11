@@ -71,8 +71,8 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
         });
         rellay_muscica.setOnClickListener(view -> {
-            Intent intent = new Intent(this, Activity_Musica.class);
-            startActivity(intent);
+            //Intent intent = new Intent(this, Activity_Musica.class);
+            //startActivity(intent);
         });
     }
 }
