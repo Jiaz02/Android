@@ -1,6 +1,5 @@
 package com.juan.dashboard.activities.model;
 
-import android.content.Context;
 import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -15,7 +14,6 @@ public class Activity_DetalleMusica extends AppCompatActivity {
     private TextView titulo,fecha,autor;
     private ImageView imgFoto;
     private DiscoMusica disco;
-    private Context context;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,7 +31,7 @@ public class Activity_DetalleMusica extends AppCompatActivity {
             titulo.setText(disco.getNombre());
             fecha.setText(disco.getAñoLanzamiento());
             autor.setText(disco.getArtista());
-            Glide.with(context).load(disco.getImgFoto()).into(imgFoto);
+            Glide.with(this).load(disco.getImgFoto()).into(imgFoto);
 
         }
 

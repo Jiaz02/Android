@@ -60,7 +60,7 @@ public class Adaptador extends BaseAdapter {
         convertView.setOnClickListener( v -> {
 
             Intent intent = new Intent(context, Activity_DetalleMusica.class);
-            intent.putExtra("item",listDiscos);
+            intent.putExtra("item",listDiscos.get(i));
             context.startActivity(intent);
         });
 
