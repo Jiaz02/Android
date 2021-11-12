@@ -8,8 +8,8 @@
 
     <ImageView
         android:id="@+id/portada"
-        android:layout_width="224dp"
-        android:layout_height="227dp"
+        android:layout_width="381dp"
+        android:layout_height="364dp"
         android:layout_marginTop="16dp"
         android:adjustViewBounds="true"
         app:layout_constraintEnd_toEndOf="parent"
