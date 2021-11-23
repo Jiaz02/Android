@@ -62,44 +62,7 @@
 
                 </RelativeLayout>
 
-                <RelativeLayout
-                    android:id="@+id/rellay_amigos"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="0.55"
-                    android:background="@color/yellow"
-                    android:clickable="true"
-                    android:foreground="?attr/selectableItemBackground">
 
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_centerInParent="true">
-
-                        <ImageView
-                            android:id="@+id/imgView2"
-                            android:layout_width="60dp"
-                            android:layout_height="60dp"
-                            android:layout_centerHorizontal="true"
-                            android:adjustViewBounds="true"
-                            android:padding="8dp"
-                            android:scaleType="centerInside"
-                            android:src="@drawable/ic_amigos"
-                            app:tint="@color/white" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_below="@+id/imgView2"
-                            android:layout_centerHorizontal="true"
-                            android:layout_marginTop="5dp"
-                            android:text="@string/ListaAmigos"
-                            android:textSize="14sp" />
-
-
-                    </RelativeLayout>
-
-                </RelativeLayout>
 
             </LinearLayout>
 
@@ -140,7 +103,7 @@
                             android:layout_below="@+id/imgView3"
                             android:layout_centerHorizontal="true"
                             android:layout_marginTop="5dp"
-                            android:text="@string/EdadCanina"
+                            android:text="@string/MuerteSubita"
                             android:textSize="14sp" />
 
 
@@ -148,44 +111,7 @@
 
                 </RelativeLayout>
 
-                <RelativeLayout
-                    android:id="@+id/rellay_quizzes"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="0.65"
-                    android:background="@color/green"
-                    android:clickable="true"
-                    android:foreground="?attr/selectableItemBackground">
 
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_centerInParent="true">
-
-                        <ImageView
-                            android:id="@+id/imgView4"
-                            android:layout_width="60dp"
-                            android:layout_height="60dp"
-                            android:layout_centerHorizontal="true"
-                            android:adjustViewBounds="true"
-                            android:padding="8dp"
-                            android:scaleType="centerInside"
-                            android:src="@drawable/ic_quizzes"
-                            app:tint="@color/white" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_below="@+id/imgView4"
-                            android:layout_centerHorizontal="true"
-                            android:layout_marginTop="5dp"
-                            android:text="@string/Quizzes"
-                            android:textSize="14sp" />
-
-
-                    </RelativeLayout>
-
-                </RelativeLayout>
 
             </LinearLayout>
 
@@ -234,44 +160,7 @@
 
                 </RelativeLayout>
 
-                <RelativeLayout
-                    android:id="@+id/rellay_mapas"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="0.55"
-                    android:background="@color/darkblue"
-                    android:clickable="true"
-                    android:foreground="?attr/selectableItemBackground">
 
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_centerInParent="true">
-
-                        <ImageView
-                            android:id="@+id/imgView6"
-                            android:layout_width="60dp"
-                            android:layout_height="60dp"
-                            android:layout_centerHorizontal="true"
-                            android:adjustViewBounds="true"
-                            android:padding="8dp"
-                            android:scaleType="centerInside"
-                            android:src="@drawable/ic_mapas"
-                            app:tint="@color/white" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_below="@+id/imgView6"
-                            android:layout_centerHorizontal="true"
-                            android:layout_marginTop="5dp"
-                            android:text="@string/Mapas"
-                            android:textSize="14sp" />
-
-
-                    </RelativeLayout>
-
-                </RelativeLayout>
 
             </LinearLayout>
 
@@ -320,44 +209,7 @@
 
                 </RelativeLayout>
 
-                <RelativeLayout
-                    android:id="@+id/rellay_ajustes"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="0.65"
-                    android:background="@color/violet"
-                    android:clickable="true"
-                    android:foreground="?attr/selectableItemBackground">
 
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_centerInParent="true">
-
-                        <ImageView
-                            android:id="@+id/imgView8"
-                            android:layout_width="60dp"
-                            android:layout_height="60dp"
-                            android:layout_centerHorizontal="true"
-                            android:adjustViewBounds="true"
-                            android:padding="8dp"
-                            android:scaleType="centerInside"
-                            android:src="@drawable/ic_herramientas"
-                            app:tint="@color/white" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_below="@+id/imgView8"
-                            android:layout_centerHorizontal="true"
-                            android:layout_marginTop="5dp"
-                            android:text="@string/Herramientas"
-                            android:textSize="14sp" />
-
-
-                    </RelativeLayout>
-
-                </RelativeLayout>
 
             </LinearLayout>
 

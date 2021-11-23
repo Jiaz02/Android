@@ -7,25 +7,42 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.widget.TextView;
 
+import com.juan.copscaps.modosdejuego.clasico.Pregunta;
+
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Random;
 import java.util.Scanner;
 
 public class Splash extends AppCompatActivity {
     ArrayList<String> Tips = new ArrayList<>();
-    File fichero = new File("com/juan/copscaps/data/palabras.txt");
 
+    File txtPalabras = new File("src/main/res/raw/palabras.txt");
+
+    List<Pregunta> preguntas = new ArrayList<Pregunta>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
 
+        String linea;
 
+        try{
+            BufferedReader reader = new BufferedReader(new FileReader(txtPalabras));
+                while ((linea=reader.readLine())!=null){
+                    String [] campos = linea.split(",");
+                }
 
+        } catch (IOException e){
+
+        }
 
 
 
@@ -50,13 +67,12 @@ public class Splash extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-//enviamos 0 a correctas e incorrectas para que pueda iniciar el juego
 
                 Intent intent = new Intent(Splash.this,MainActivity.class);
                 startActivity(intent);
                 finish();
 
             }
-        },4000);
+        },3000);
     }
 }
