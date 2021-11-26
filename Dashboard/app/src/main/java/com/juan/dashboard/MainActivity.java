@@ -8,13 +8,13 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.juan.dashboard.activities.Activity_Edad;
 import com.juan.dashboard.activities.Activity_Galeria;
-import com.juan.dashboard.activities.Activity_Mapas;
 import com.juan.dashboard.activities.Activity_Musica;
 import com.juan.dashboard.activities.Activity_Quizzes;
 import com.juan.dashboard.activities.Activity_Restaurantes;
 import com.juan.dashboard.activities.Activity_Setings;
 import com.juan.dashboard.activities.Amigos_Activity;
 import com.juan.dashboard.activities.Calculadora_Activity;
+import com.juan.dashboard.activities.MapsActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -59,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
         });
         rellay_mapas.setOnClickListener(view -> {
-            Intent intent = new Intent(this, Activity_Mapas.class);
+            Intent intent = new Intent(this, MapsActivity.class);
             startActivity(intent);
         });
         rellay_restaurantes.setOnClickListener(view -> {

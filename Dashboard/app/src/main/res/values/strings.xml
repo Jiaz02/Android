@@ -60,4 +60,6 @@
     <string name="Musica">Musica</string>
     <string name="Next">Siguiente</string>
     <string name="Spotify">Spotify</string>
+    <string name="title_activity_mapas">Activity_Mapas</string>
+    <string name="title_activity_maps">MapsActivity</string>
 </resources>
