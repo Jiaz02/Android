@@ -39,5 +39,7 @@ dependencies {
     implementation platform('com.google.firebase:firebase-bom:29.0.0')
     //analitics
     implementation 'com.google.firebase:firebase-analytics'
+    //autentificacion
+    implementation 'com.google.firebase:firebase-auth'
 
 }
