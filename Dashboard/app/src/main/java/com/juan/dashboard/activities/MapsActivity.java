@@ -61,8 +61,31 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         //si lo cambias cambia el tipo de mapa a satelite etc...
         mMap.setMapType(GoogleMap.MAP_TYPE_NORMAL);
         // Add a marker in Sydney and move the camera
-        LatLng sydney = new LatLng(41.04935, -0.12681);
-        mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Alcañiz"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
+        LatLng alcañiz = new LatLng(41.04935, -0.12681);
+        mMap.addMarker(new MarkerOptions().position(alcañiz).title("Marker in Alcañiz"));
+
+        LatLng Ichiraku = new LatLng(41.034042,-0.159670);
+        LatLng Clam = new LatLng(41.054387,-0.127515);
+        LatLng Maclaren = new LatLng(40.977067,-0.154186);
+        LatLng Moe = new LatLng(40.979961,-0.145108);
+        LatLng Pollos = new LatLng(41.047484,-0.129865);
+        LatLng Roger = new LatLng(41.052866,-0.131594);
+        LatLng Anteiku = new LatLng(41.045941,-0.133969);
+        LatLng Yukihira = new LatLng(41.050331,-0125705);
+        LatLng Crustaceo = new LatLng(41.052926,-0.134497);
+        LatLng Resort = new LatLng(41.065649,-0.202386);
+        mMap.addMarker(new MarkerOptions().position(Ichiraku).title("Ichiraku Ramen").snippet("Telefono ; 978456123"));
+        mMap.addMarker(new MarkerOptions().position(Clam).title("The Drunken Clam").snippet("Telefono ; 978456124"));
+        mMap.addMarker(new MarkerOptions().position(Maclaren).title("Maclaren's Pub").snippet("Telefono ; 978456125"));
+        mMap.addMarker(new MarkerOptions().position(Moe).title("Moe's").snippet("Telefono ; 978456123"));
+        mMap.addMarker(new MarkerOptions().position(Pollos).title("Los Pollos Hermanos").snippet("Telefono ; 978456124"));
+        mMap.addMarker(new MarkerOptions().position(Roger).title("Roger's Place").snippet("Telefono ; 978456125"));
+        mMap.addMarker(new MarkerOptions().position(Anteiku).title("Anteiku").snippet("Telefono ; 978456123"));
+        mMap.addMarker(new MarkerOptions().position(Yukihira).title("Yukihira").snippet("Telefono ; 978456124"));
+        mMap.addMarker(new MarkerOptions().position(Crustaceo).title("Crustaceo Crugiente").snippet("Telefono ; 978456125"));
+        mMap.addMarker(new MarkerOptions().position(Resort).title("Resort Tōtsuki").snippet("Telefono ; 978456125"));
+
+
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(alcañiz));
     }
 }
