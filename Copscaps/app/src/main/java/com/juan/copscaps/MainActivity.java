@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+//Para introducir el mapa, hacer que salga la ubicacion de la rae
 
         rellay_clasico=findViewById(R.id.rellay_clasico);
         rellay_clasico.setOnClickListener(view -> {
