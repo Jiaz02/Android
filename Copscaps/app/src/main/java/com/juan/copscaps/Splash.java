@@ -23,26 +23,32 @@ import java.util.Scanner;
 public class Splash extends AppCompatActivity {
     ArrayList<String> Tips = new ArrayList<>();
 
-    File txtPalabras = new File("src/main/res/raw/palabras.txt");
 
-    List<Pregunta> preguntas = new ArrayList<Pregunta>();
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
-
+        InputStream archivo = getResources().openRawResource(R.raw.palabras);
+        BufferedReader reader = new BufferedReader(new InputStreamReader(archivo));
         String linea;
+        boolean seguir = true;
 
-        try{
-            BufferedReader reader = new BufferedReader(new FileReader(txtPalabras));
-                while ((linea=reader.readLine())!=null){
-                    String [] campos = linea.split(",");
-                }
+        while (seguir == true){
+            try{
 
-        } catch (IOException e){
+                linea=reader.readLine();
+                String [] campos = linea.split(",");
+                Pregunta p = new Pregunta(Integer.valueOf(campos[0]),campos[1],campos[2],campos[3],campos[4],campos[5]);
+                System.out.println(p.toString());
+                LogicaNegocio.listaPreguntas.add(p);
 
+            } catch (Exception e){
+                seguir = false;
+            }
         }
+
 
 
 
