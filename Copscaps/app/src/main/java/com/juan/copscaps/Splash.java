@@ -79,7 +79,7 @@ public class Splash extends AppCompatActivity {
         TextView txtconsejo=findViewById(R.id.txtSplash);
 
         Random r = new Random();
-        int valorDado = r.nextInt(Tips.size())+1;
+        int valorDado = r.nextInt(Tips.size());
 
         txtconsejo.setText(Tips.get(valorDado));
 

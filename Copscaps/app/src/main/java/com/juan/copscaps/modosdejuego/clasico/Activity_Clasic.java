@@ -1,5 +1,7 @@
 package com.juan.copscaps.modosdejuego.clasico;
 
+import static java.util.concurrent.TimeUnit.SECONDS;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
@@ -13,6 +15,8 @@ import com.juan.copscaps.R;
 
 import java.util.ArrayList;
 import java.util.Random;
+import java.util.concurrent.Executors;
+import java.util.concurrent.ScheduledExecutorService;
 
 public class Activity_Clasic extends AppCompatActivity {
 
@@ -44,17 +48,37 @@ public class Activity_Clasic extends AppCompatActivity {
         }
 
         MostrarPreguntas(NumPregunta,preguntas);
+        temporizador();
+    }
 
+    private void temporizador(){
+        final ScheduledExecutorService scheduler = Executors.newScheduledThreadPool(1);
+
+        final Runnable runnable = new Runnable() {
+            int countdownStarter = 20;
+
+            public void run() {
+
+                System.out.println(countdownStarter);
+                countdownStarter--;
+
+                if (countdownStarter < 0) {
+                    System.out.println("Timer Over!");
+                    scheduler.shutdown();
+                }
+            }
+        };
+        scheduler.scheduleAtFixedRate(runnable, 0, 1, SECONDS);
     }
 
     private void MostrarPreguntas(int numPregunta, ArrayList<Pregunta> preguntas) {
         RadioButton rp1 = findViewById(R.id.radioButtonRespuesta1);
         RadioButton rp2 = findViewById(R.id.radioButtonRespuesta2);
         TextView pregunta = findViewById(R.id.idPregunta);
-        TextView numero = findViewById(R.id.idPregunta);
+        TextView numero = findViewById(R.id.idNumPregunta);
 
         Random r = new Random();
-        int valorDado = r.nextInt(2);
+        int valorDado = r.nextInt(99);
 
         int num=(numPregunta+1);
         String nPregunta="Pregunta "+num;

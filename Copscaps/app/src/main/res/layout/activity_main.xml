@@ -38,24 +38,26 @@
                         android:layout_height="wrap_content"
                         android:layout_centerInParent="true">
 
-<!--                        <ImageView-->
-<!--                            android:id="@+id/imgView1"-->
-<!--                            android:layout_width="60dp"-->
-<!--                            android:layout_height="60dp"-->
-<!--                            android:layout_centerHorizontal="true"-->
-<!--                            android:adjustViewBounds="true"-->
-<!--                            android:padding="8dp"-->
-<!--                            android:scaleType="centerInside"-->
-<!--                            android:src="@drawable/ic_calculadora"-->
-<!--                            app:tint="@color/white" />-->
+                        <ImageView
+                            android:id="@+id/imgView1"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_centerHorizontal="true"
+                            android:adjustViewBounds="true"
+                            android:padding="8dp"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/timer"
+                            app:tint="@color/white" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_centerHorizontal="true"
                             android:layout_marginTop="5dp"
+                            android:layout_below="@+id/imgView1"
                             android:text="@string/Clasico"
-                            android:textSize="14sp" />
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
 
 
                     </RelativeLayout>
@@ -94,7 +96,7 @@
                             android:adjustViewBounds="true"
                             android:padding="8dp"
                             android:scaleType="centerInside"
-                            android:src="@drawable/ic_edad_canina"
+                            android:src="@drawable/deadmach"
                             app:tint="@color/white" />
 
                         <TextView
@@ -104,7 +106,8 @@
                             android:layout_centerHorizontal="true"
                             android:layout_marginTop="5dp"
                             android:text="@string/MuerteSubita"
-                            android:textSize="14sp" />
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
 
 
                     </RelativeLayout>
@@ -143,7 +146,7 @@
                             android:adjustViewBounds="true"
                             android:padding="8dp"
                             android:scaleType="centerInside"
-                            android:src="@drawable/ic_gallery"
+                            android:src="@drawable/info"
                             app:tint="@color/white" />
 
                         <TextView
@@ -152,8 +155,9 @@
                             android:layout_below="@+id/imgView5"
                             android:layout_centerHorizontal="true"
                             android:layout_marginTop="5dp"
-                            android:text="@string/Galeria"
-                            android:textSize="14sp" />
+                            android:text="@string/Info"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
 
 
                     </RelativeLayout>
@@ -192,7 +196,7 @@
                             android:adjustViewBounds="true"
                             android:padding="8dp"
                             android:scaleType="centerInside"
-                            android:src="@drawable/restaurantes"
+                            android:src="@drawable/duda"
                             app:tint="@color/white" />
 
                         <TextView
@@ -201,7 +205,8 @@
                             android:layout_below="@+id/imgView7"
                             android:layout_centerHorizontal="true"
                             android:layout_marginTop="5dp"
-                            android:text="@string/Restaurantes"
+                            android:text="@string/Dudas"
+                            android:textStyle="bold"
                             android:textSize="14sp" />
 
 
