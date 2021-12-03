@@ -73,8 +73,6 @@ public class Splash extends AppCompatActivity {
         Tips.add(consejo);
         consejo= getString(R.string.Tip4);
         Tips.add(consejo);
-        consejo= getString(R.string.Tip5);
-        Tips.add(consejo);
 
         TextView txtconsejo=findViewById(R.id.txtSplash);
 

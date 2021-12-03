@@ -5,6 +5,7 @@ import static java.util.concurrent.TimeUnit.SECONDS;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.os.CountDownTimer;
 import android.view.View;
 import android.widget.RadioButton;
 import android.widget.TextView;
@@ -15,6 +16,8 @@ import com.juan.copscaps.R;
 
 import java.util.ArrayList;
 import java.util.Random;
+import java.util.Timer;
+import java.util.TimerTask;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 
@@ -25,12 +28,26 @@ public class Activity_Clasic extends AppCompatActivity {
     private int NumPregunta = 0 ;
     private String Seleccion="";
     private boolean avanzar=false;
+    TextView timerr;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_clasic);
         setTitle("100 en 8 min");
+
+        timerr = findViewById(R.id.txtTiempo);
+
+        new CountDownTimer(30000, 1000) {
+
+            public void onTick(long millisUntilFinished) {
+                timerr.setText(getString(R.string.timer)+ millisUntilFinished / 1000+"s");
+            }
+
+            public void onFinish() {
+                timerr.setText("done!");
+            }
+        }.start();
 
         for (int i = 0; i < 99; i++) {
             Random r = new Random();
@@ -46,30 +63,12 @@ public class Activity_Clasic extends AppCompatActivity {
                 preguntas.add(LogicaNegocio.listaPreguntasCorrectas.get(numPregunta));
             }
         }
-
         MostrarPreguntas(NumPregunta,preguntas);
-        temporizador();
+
     }
 
-    private void temporizador(){
-        final ScheduledExecutorService scheduler = Executors.newScheduledThreadPool(1);
 
-        final Runnable runnable = new Runnable() {
-            int countdownStarter = 20;
 
-            public void run() {
-
-                System.out.println(countdownStarter);
-                countdownStarter--;
-
-                if (countdownStarter < 0) {
-                    System.out.println("Timer Over!");
-                    scheduler.shutdown();
-                }
-            }
-        };
-        scheduler.scheduleAtFixedRate(runnable, 0, 1, SECONDS);
-    }
 
     private void MostrarPreguntas(int numPregunta, ArrayList<Pregunta> preguntas) {
         RadioButton rp1 = findViewById(R.id.radioButtonRespuesta1);
@@ -107,4 +106,5 @@ public class Activity_Clasic extends AppCompatActivity {
                 break;
         }
     }
+
 }
