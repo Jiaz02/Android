@@ -30,37 +30,38 @@ public class Splash extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
-        InputStream archivo = getResources().openRawResource(R.raw.palabras);
+        InputStream archivo = getResources().openRawResource(R.raw.listapalabrasbien);
         BufferedReader reader = new BufferedReader(new InputStreamReader(archivo));
         String linea;
         boolean seguir = true;
 
         while (seguir == true){
             try{
-
+                String bien = getString(R.string.bien);
+                String mal = getString(R.string.mal);
                 linea=reader.readLine();
                 String [] campos = linea.split(",");
-                Pregunta p = new Pregunta(Integer.valueOf(campos[0]),campos[1],campos[2],campos[3],campos[4],campos[5]);
+                Pregunta p = new Pregunta(Integer.valueOf(campos[0]),campos[1],bien,mal,bien,campos[1]);
                 System.out.println(p.toString());
-                LogicaNegocio.listaPreguntas.add(p);
+                LogicaNegocio.listaPreguntasCorrectas.add(p);
 
             } catch (Exception e){
                 seguir = false;
             }
         }
 
+        System.out.println(LogicaNegocio.getListaCorrectas().size());
 
 
-
-        String consejo = "Recuerda que las agudas acabadas en -s, -n, o vocal se acentuan";
+        String consejo = getString(R.string.Tip1);
         Tips.add(consejo);
-        consejo="Recuerda que debes acentuar las esdrújulas";
+        consejo= getString(R.string.Tip2);
         Tips.add(consejo);
-        consejo="Recuerda diferenciar las v y las b correctamente";
+        consejo= getString(R.string.Tip3);
         Tips.add(consejo);
-        consejo="Recuerda que hay palabras que llevan h y no lo sabes";
+        consejo= getString(R.string.Tip4);
         Tips.add(consejo);
-        consejo="Recuerda leer bien las preguntas";
+        consejo= getString(R.string.Tip5);
         Tips.add(consejo);
 
         TextView txtconsejo=findViewById(R.id.txtSplash);

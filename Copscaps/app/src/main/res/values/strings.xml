@@ -9,4 +9,11 @@
     <string name="Restaurantes">Restaurantes</string>
     <string name="Herramientas">Herramientas</string>
     <string name="btnEnviar">Siguiente</string>
+    <string name="Tip1">Recuerda que las agudas acabadas en -s, -n, o vocal se acentuan</string>
+    <string name="Tip2">Recuerda que debes acentuar las esdrújulas</string>
+    <string name="Tip3">Recuerda diferenciar las v y las b correctamente</string>
+    <string name="Tip4">Recuerda que hay palabras que llevan h y no lo sabes</string>
+    <string name="Tip5">Recuerda leer bien las preguntas</string>
+    <string name="bien">Bien</string>
+    <string name="mal">Mal</string>
 </resources>
