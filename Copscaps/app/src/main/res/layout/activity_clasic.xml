@@ -31,7 +31,9 @@
         android:gravity="center"
         android:paddingTop="48dp"
         android:paddingBottom="24dp"
-        android:textSize="16dp" />
+        android:textSize="24dp"
+        android:textStyle="bold"
+        />
 
     <View
         android:id="@+id/divider"

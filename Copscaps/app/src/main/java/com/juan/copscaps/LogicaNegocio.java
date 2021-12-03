@@ -1,7 +1,5 @@
 package com.juan.copscaps;
 
-import com.juan.copscaps.modosdejuego.clasico.Pregunta;
-
 import java.util.ArrayList;
 import java.util.List;
 

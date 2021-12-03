@@ -7,6 +7,8 @@ import android.view.View;
 import android.widget.RadioButton;
 import android.widget.TextView;
 
+import com.juan.copscaps.LogicaNegocio;
+import com.juan.copscaps.Pregunta;
 import com.juan.copscaps.R;
 
 import java.util.ArrayList;
@@ -26,20 +28,20 @@ public class Activity_Clasic extends AppCompatActivity {
         setContentView(R.layout.activity_clasic);
         setTitle("100 en 8 min");
 
-        String aux1="Hola";
-        String aux2="Bien";
-        String aux3="Mal";
-        String aux4="Bien";
-        String aux5="Hola";
-        Pregunta p1= new Pregunta(1,aux1,aux2,aux3,aux4,aux5);
-        preguntas.add(p1);
-        aux1="Adios";
-        aux2="Bien";
-        aux3="Mal";
-        aux4="Mal";
-        aux5="Adios";
-        Pregunta p2= new Pregunta(1,aux1,aux2,aux3,aux4,aux5);
-        preguntas.add(p2);
+        for (int i = 0; i < 99; i++) {
+            Random r = new Random();
+            int selectorDeLista = r.nextInt(5);
+
+            if (selectorDeLista%2==0){
+                int numPregunta = r.nextInt(200);
+
+                preguntas.add(LogicaNegocio.listaPreguntasIncorrectas.get(numPregunta));
+            } else {
+                int numPregunta = r.nextInt(200);
+
+                preguntas.add(LogicaNegocio.listaPreguntasCorrectas.get(numPregunta));
+            }
+        }
 
         MostrarPreguntas(NumPregunta,preguntas);
 

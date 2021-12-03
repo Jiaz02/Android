@@ -1,4 +1,4 @@
-package com.juan.copscaps.modosdejuego.clasico;
+package com.juan.copscaps;
 
 public class Pregunta {
 //clase que sirve para almacenar las distintas preguntas.
