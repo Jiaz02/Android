@@ -31,7 +31,9 @@ public class Splash extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
         InputStream archivo = getResources().openRawResource(R.raw.listapalabrasbien);
+        InputStream archivo2 = getResources().openRawResource(R.raw.listapalabrasmal);
         BufferedReader reader = new BufferedReader(new InputStreamReader(archivo));
+        BufferedReader reader2 = new BufferedReader(new InputStreamReader(archivo2));
         String linea;
         boolean seguir = true;
 
@@ -46,11 +48,28 @@ public class Splash extends AppCompatActivity {
                 LogicaNegocio.listaPreguntasCorrectas.add(p);
 
             } catch (Exception e){
+                System.out.println(e);
                 seguir = false;
             }
         }
 
-        System.out.println(LogicaNegocio.getListaCorrectas().size());
+        seguir = true;
+        int count = 0;
+        while (seguir == true){
+            try{
+                String bien = getString(R.string.bien);
+                String mal = getString(R.string.mal);
+                linea=reader2.readLine();
+                String [] campos = linea.split(",");
+                Pregunta p = new Pregunta(Integer.valueOf(campos[0]),campos[1],bien,mal,mal,LogicaNegocio.getListaCorrectas().get(count).getPregunta());
+                System.out.println(p.toString());
+                LogicaNegocio.listaPreguntasIncorrectas.add(p);
+                count++;
+            } catch (Exception e){
+                System.out.println(e);
+                seguir = false;
+            }
+        }
 
 
         String consejo = getString(R.string.Tip1);
