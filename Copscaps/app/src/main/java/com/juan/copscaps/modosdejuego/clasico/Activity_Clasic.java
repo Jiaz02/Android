@@ -1,7 +1,5 @@
 package com.juan.copscaps.modosdejuego.clasico;
 
-import static java.util.concurrent.TimeUnit.SECONDS;
-
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
@@ -9,6 +7,7 @@ import android.os.CountDownTimer;
 import android.view.View;
 import android.widget.RadioButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.juan.copscaps.LogicaNegocio;
 import com.juan.copscaps.Pregunta;
@@ -16,10 +15,6 @@ import com.juan.copscaps.R;
 
 import java.util.ArrayList;
 import java.util.Random;
-import java.util.Timer;
-import java.util.TimerTask;
-import java.util.concurrent.Executors;
-import java.util.concurrent.ScheduledExecutorService;
 
 public class Activity_Clasic extends AppCompatActivity {
 
