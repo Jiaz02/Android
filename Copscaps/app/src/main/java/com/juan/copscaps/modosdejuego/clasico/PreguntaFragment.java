@@ -80,6 +80,10 @@ public class PreguntaFragment extends Fragment {
 
             preguntaList = Activity_Clasic.getListaFallos();
 
+            for (Pregunta p:Activity_Clasic.getListaBlanco()) {
+                preguntaList.add(p);
+            }
+
             adapterPregunta = new MyPreguntaRecyclerViewAdapter(getActivity(),preguntaList);
             recyclerView.setAdapter(adapterPregunta);
 

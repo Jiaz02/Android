@@ -88,6 +88,13 @@ public class Activity_Clasic extends AppCompatActivity {
 
 
     private void saltar(){
+
+        if (preguntas.size()>0){
+            for (Pregunta p:preguntas) {
+                preguntasnorespondidas.add(p);
+            }
+        }
+
         Intent intent = new Intent(this, Resultado_Activity.class);
         intent.putExtra("aciertos",numAciertos);
         intent.putExtra("fallos",numfallos);
