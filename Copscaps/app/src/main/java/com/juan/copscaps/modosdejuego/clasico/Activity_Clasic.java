@@ -37,6 +37,7 @@ public class Activity_Clasic extends AppCompatActivity {
     private boolean avanzar=false;
     TextView timerr;
     Button btnNext;
+    Button btnFin;
     private static int numAciertos=0;
     private static int numfallos=0;
 
@@ -48,6 +49,7 @@ public class Activity_Clasic extends AppCompatActivity {
         setContentView(R.layout.activity_clasic);
         setTitle(getResources().getString(R.string.cienenocho));
 
+        btnFin = findViewById(R.id.button2);
 
         timerr = findViewById(R.id.txtTiempo);
 
@@ -79,14 +81,14 @@ public class Activity_Clasic extends AppCompatActivity {
         }
         MostrarPreguntas(NumPregunta,preguntas);
 
-
+        btnFin.setOnClickListener(view -> {
+            saltar();
+        });
     }
 
 
     private void saltar(){
         Intent intent = new Intent(this, Resultado_Activity.class);
-//        numAciertos=100;
-//        numfallos=0;
         intent.putExtra("aciertos",numAciertos);
         intent.putExtra("fallos",numfallos);
         startActivity(intent);

@@ -27,7 +27,7 @@ public class Resultado_Activity extends AppCompatActivity {
         double result = (aciertos-fallos)/10;
 
         if (result < 0) {
-            puntos.setText("0");
+            puntos.setText("0.0");
         } else{
             puntos.setText(String.valueOf(result));
         }

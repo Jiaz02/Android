@@ -21,4 +21,8 @@
     <string name="Pregunta">"Pregunta: "</string>
     <string name="cienenocho">100 en 8 min</string>
     <string name="title_activity_maps">MapsActivity</string>
+    <string name="ciendescripcion">Este modo de juego es una replica del examen de la oposición, tienes 100 minutos para responder a 100 preguntas, puedes marcar BIEN, MAL, o SALTAR, si la saltas, tendras que responerla al final, cuando termines o se acabe el tiempo, se te mostrará la puntuacion y los errores.</string>
+    <string name="deadmatch">Muerte Subita</string>
+    <string name="deadmatchdescripcion">En este modo de juego tienes 10 vidas, 10 fallos posibles, el objetivo es responder la mayor cantidad de preguntas antes de que te quedes sin vidas, no hay limite de tiempo</string>
+    <string name="btnTerminarTest">Fin</string>
 </resources>

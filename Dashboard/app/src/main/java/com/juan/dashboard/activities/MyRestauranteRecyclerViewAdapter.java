@@ -10,7 +10,6 @@ import android.widget.TextView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
-import com.juan.dashboard.activities.model.Restaurante;
 import com.juan.dashboard.databinding.FragmentRestauranteBinding;
 
 import java.util.List;
