@@ -37,20 +37,21 @@ public class Activity_Clasic extends AppCompatActivity {
     private boolean avanzar=false;
     TextView timerr;
     Button btnNext;
-    private int numAciertos=0;
-    private int numfallos=0;
-    private int numblancos=0;
+    private static int numAciertos=0;
+    private static int numfallos=0;
+
+
     private CountDownTimer coun = null;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_clasic);
-        setTitle("100 en 8 min");
+        setTitle(getResources().getString(R.string.cienenocho));
 
 
         timerr = findViewById(R.id.txtTiempo);
 
-        coun = new CountDownTimer(30000, 1000) {
+        coun = new CountDownTimer(480000, 1000) {
 
             public void onTick(long millisUntilFinished) {
                 timerr.setText(getString(R.string.timer)+ millisUntilFinished / 1000+"s");
@@ -62,7 +63,7 @@ public class Activity_Clasic extends AppCompatActivity {
             }
         }.start();
 
-        for (int i = 0; i < 99; i++) {
+        for (int i = 0; i < 100; i++) {
             Random r = new Random();
             int selectorDeLista = r.nextInt(5);
 
@@ -83,8 +84,11 @@ public class Activity_Clasic extends AppCompatActivity {
 
 
     private void saltar(){
-
-        Intent intent = new Intent(this, Activity_Fallos.class);
+        Intent intent = new Intent(this, Resultado_Activity.class);
+//        numAciertos=100;
+//        numfallos=0;
+        intent.putExtra("aciertos",numAciertos);
+        intent.putExtra("fallos",numfallos);
         startActivity(intent);
         coun.cancel();
         finish();
@@ -104,7 +108,7 @@ public class Activity_Clasic extends AppCompatActivity {
 
             int num=(numPregunta+1);
             preguntas.get(valorDado).setNumero(num);
-            String nPregunta="Pregunta "+preguntas.get(valorDado).getNumero();
+            String nPregunta=getResources().getString(R.string.Pregunta)+preguntas.get(valorDado).getNumero();
             numero.setText(nPregunta);
             pregunta.setText(preguntas.get(valorDado).getPregunta());
             rp1.setText(preguntas.get(valorDado).getRespuesta1());
@@ -155,7 +159,7 @@ public class Activity_Clasic extends AppCompatActivity {
         if (preguntasnorespondidas.size()>0){
             int valorDado = r.nextInt(preguntasnorespondidas.size());
 
-            String nPregunta="Pregunta "+preguntasnorespondidas.get(valorDado).getNumero();
+            String nPregunta=getResources().getString(R.string.Pregunta)+preguntasnorespondidas.get(valorDado).getNumero();
             numero.setText(nPregunta);
             pregunta.setText(preguntasnorespondidas.get(valorDado).getPregunta());
             rp1.setText(preguntasnorespondidas.get(valorDado).getRespuesta1());
@@ -196,11 +200,11 @@ public class Activity_Clasic extends AppCompatActivity {
         //guardamos la seleccion del usuario a la vez que decimos que hay algo selecionado gracias a avanzar
         switch (view.getId()){
             case R.id.radioButtonRespuesta:
-                Seleccion= rp1.getText().toString();
+                Seleccion= "Bien";
                 avanzar=true;
                 break;
             case R.id.radioButtonRespuesta1:
-                Seleccion=rp2.getText().toString();
+                Seleccion="Mal";
                 avanzar=true;
                 break;
             case R.id.radioButtonRespuesta2:

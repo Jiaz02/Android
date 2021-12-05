@@ -15,4 +15,9 @@
     <string name="timer">Tu tiempo es: </string>
     <string name="blanco">No has seleccionado una opcion</string>
     <string name="siguiente">Siguiente</string>
+    <string name="felicidad">Felicidades, has completado el test</string>
+    <string name="msgPuntuacion">Tu puntuación seria:</string>
+    <string name="verErrores">Ver errores</string>
+    <string name="Pregunta">"Pregunta: "</string>
+    <string name="cienenocho">100 en 8 min</string>
 </resources>

@@ -4,6 +4,54 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="8dp"
     tools:context=".modosdejuego.clasico.Resultado_Activity">
+
+    <TextView
+        android:id="@+id/txtfelicidad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:padding="8dp"
+        android:text="@string/felicidad"
+        android:textSize="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtPuntucion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:padding="8dp"
+        android:text="@string/msgPuntuacion"
+        app:layout_constraintEnd_toEndOf="@+id/txtfelicidad"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtfelicidad" />
+
+    <TextView
+        android:id="@+id/txtpuntos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="88dp"
+        android:textSize="64dp"
+        app:layout_constraintEnd_toEndOf="@+id/txtPuntucion"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="@+id/txtPuntucion"
+        app:layout_constraintTop_toBottomOf="@+id/txtPuntucion" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:text="@string/verErrores"
+        app:layout_constraintEnd_toEndOf="@+id/txtpuntos"
+        app:layout_constraintStart_toStartOf="@+id/txtpuntos"
+        app:layout_constraintTop_toBottomOf="@+id/txtpuntos" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
