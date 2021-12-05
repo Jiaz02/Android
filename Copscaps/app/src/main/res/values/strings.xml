@@ -20,4 +20,5 @@
     <string name="verErrores">Ver errores</string>
     <string name="Pregunta">"Pregunta: "</string>
     <string name="cienenocho">100 en 8 min</string>
+    <string name="title_activity_maps">MapsActivity</string>
 </resources>

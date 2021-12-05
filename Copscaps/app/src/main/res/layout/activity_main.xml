@@ -75,7 +75,7 @@
                 android:layout_weight="1">
 
                 <RelativeLayout
-                    android:id="@+id/rellay_perrete"
+                    android:id="@+id/rellay_deadmatch"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="0.55"
@@ -125,7 +125,7 @@
                 android:layout_weight="1">
 
                 <RelativeLayout
-                    android:id="@+id/rellay_galeria"
+                    android:id="@+id/rellay_info"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="0.65"
@@ -175,7 +175,7 @@
                 android:layout_weight="1">
 
                 <RelativeLayout
-                    android:id="@+id/rellay_restaurantes"
+                    android:id="@+id/rellay_mapa"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="0.55"
