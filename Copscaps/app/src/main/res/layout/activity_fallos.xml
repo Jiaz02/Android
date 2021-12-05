@@ -4,11 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".modosdejuego.clasico.Activity_Fallos">
 
     <fragment
         android:id="@+id/restauranteFragmentarç"
-        android:name="com.juan.dashboard.activities.RestauranteFragment"
+        android:name="com.juan.copscaps.modosdejuego.clasico.PreguntaFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -17,4 +17,3 @@
         app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
-

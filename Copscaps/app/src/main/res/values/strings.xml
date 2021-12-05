@@ -13,4 +13,6 @@
     <string name="Info">¿Quieres saber en que consiste cada modo?</string>
     <string name="Dudas">¿Tienes dudas con alguna palabra?</string>
     <string name="timer">Tu tiempo es: </string>
+    <string name="blanco">No has seleccionado una opcion</string>
+    <string name="siguiente">Siguiente</string>
 </resources>

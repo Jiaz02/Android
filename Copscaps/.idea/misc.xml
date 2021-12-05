@@ -4,6 +4,11 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/PC/AndroidStudioProjects/Android/Copscaps/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/PC/StudioProjects/Android/Copscaps/app/src/main/res/layout/activity_clasic.xml" value="0.20244565217391305" />
+        <entry key="..\:/Users/PC/StudioProjects/Android/Copscaps/app/src/main/res/layout/activity_detalle_falladas.xml" value="0.3375" />
+        <entry key="..\:/Users/PC/StudioProjects/Android/Copscaps/app/src/main/res/layout/activity_fallos.xml" value="0.3375" />
+        <entry key="..\:/Users/PC/StudioProjects/Android/Copscaps/app/src/main/res/layout/fragment_pregunta.xml" value="0.3375" />
+        <entry key="..\:/Users/PC/StudioProjects/Android/Copscaps/app/src/main/res/layout/fragment_pregunta_list.xml" value="0.3375" />
         <entry key="..\:/Users/damA/Desktop/Android/Copscaps/app/src/main/res/layout/activity_clasic.xml" value="0.371875" />
         <entry key="..\:/Users/damA/Desktop/Android/Copscaps/app/src/main/res/layout/activity_main.xml" value="0.371875" />
         <entry key="..\:/Users/damA/Desktop/Android/Copscaps/app/src/main/res/layout/activity_splash.xml" value="0.371875" />
