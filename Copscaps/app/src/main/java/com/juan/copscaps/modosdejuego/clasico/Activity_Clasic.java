@@ -49,6 +49,10 @@ public class Activity_Clasic extends AppCompatActivity {
         setContentView(R.layout.activity_clasic);
         setTitle(getResources().getString(R.string.cienenocho));
 
+        preguntasfalladas.clear();
+        preguntas.clear();
+        preguntasnorespondidas.clear();
+
         btnFin = findViewById(R.id.button2);
 
         timerr = findViewById(R.id.txtTiempo);
@@ -85,6 +89,7 @@ public class Activity_Clasic extends AppCompatActivity {
             saltar();
         });
     }
+
 
 
     private void saltar(){

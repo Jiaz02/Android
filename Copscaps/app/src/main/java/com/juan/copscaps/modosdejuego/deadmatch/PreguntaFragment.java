@@ -1,4 +1,4 @@
-package com.juan.copscaps.modosdejuego.clasico;
+package com.juan.copscaps.modosdejuego.deadmatch;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -14,7 +14,6 @@ import android.view.ViewGroup;
 
 import com.juan.copscaps.Pregunta;
 import com.juan.copscaps.R;
-import com.juan.copscaps.modosdejuego.deadmatch.Activity_deadmatch;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -23,9 +22,8 @@ import java.util.List;
  * A fragment representing a list of Items.
  */
 public class PreguntaFragment extends Fragment {
-
     RecyclerView recyclerView;
-    MyPreguntaRecyclerViewAdapter adapterPregunta;
+    com.juan.copscaps.modosdejuego.deadmatch.MyPreguntaRecyclerViewAdapter adapterPregunta;
 
     List<Pregunta> preguntaList;
 
@@ -43,8 +41,8 @@ public class PreguntaFragment extends Fragment {
 
     // TODO: Customize parameter initialization
     @SuppressWarnings("unused")
-    public static PreguntaFragment newInstance(int columnCount) {
-        PreguntaFragment fragment = new PreguntaFragment();
+    public static com.juan.copscaps.modosdejuego.deadmatch.PreguntaFragment newInstance(int columnCount) {
+        com.juan.copscaps.modosdejuego.deadmatch.PreguntaFragment fragment = new com.juan.copscaps.modosdejuego.deadmatch.PreguntaFragment();
         Bundle args = new Bundle();
         args.putInt(ARG_COLUMN_COUNT, columnCount);
         fragment.setArguments(args);
@@ -77,15 +75,7 @@ public class PreguntaFragment extends Fragment {
 
             preguntaList = new ArrayList<>();
 
-
-
-            preguntaList = Activity_Clasic.getListaFallos();
-
-
-            for (Pregunta p:Activity_Clasic.getListaBlanco()) {
-                preguntaList.add(p);
-            }
-
+            preguntaList = Activity_deadmatch.getListaFallos();
 
 
             adapterPregunta = new MyPreguntaRecyclerViewAdapter(getActivity(),preguntaList);

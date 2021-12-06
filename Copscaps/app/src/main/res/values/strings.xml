@@ -25,4 +25,8 @@
     <string name="deadmatch">Muerte Subita</string>
     <string name="deadmatchdescripcion">En este modo de juego tienes 10 vidas, 10 fallos posibles, el objetivo es responder la mayor cantidad de preguntas antes de que te quedes sin vidas, no hay limite de tiempo</string>
     <string name="btnTerminarTest">Fin</string>
+    <string name="vidas">Num vidas: </string>
+    <string name="msgacierto">¡Palabra Acertada!</string>
+    <string name="msgfallo">¡Palabra Fallada!</string>
+    <string name="ok">Aceptar</string>
 </resources>
