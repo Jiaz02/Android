@@ -16,8 +16,7 @@
     <string name="timer">Your time is: </string>
     <string name="blanco">You have not selected an option</string>
     <string name="siguiente">Next</string>
-    <string name="felicidad">
-Congratulations, you have completed the test</string>
+    <string name="felicidad">Congratulations, you have completed the test</string>
     <string name="msgPuntuacion">Your score will be:</string>
     <string name="verErrores">See mistakes</string>
     <string name="Pregunta">"Question: "</string>
