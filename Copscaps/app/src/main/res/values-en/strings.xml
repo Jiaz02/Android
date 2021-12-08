@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Cops &amp; caps</string>
+    <string name="Clasico">100 worlds in 8 min.</string>
+    <string name="MuerteSubita">Deadmatch.</string>
+    <string name="btnEnviar">Next</string>
+    <string name="Tip1">Remember that treble ending in -s, -n, or vowel are stressed.</string>
+    <string name="Tip2">Remember that you must accentuate the esdrújulas.</string>
+    <string name="Tip3">Remember to differentiate the v\'s and b\'s correctly.</string>
+    <string name="Tip4">Remember that there are words that have h and you don\'t know it.</string>
+    <string name="Tip5">Remember to read the questions well.</string>
+    <string name="bien">Right</string>
+    <string name="mal">False</string>
+    <string name="Info">Do you want to know what each mode consists of?</string>
+    <string name="Dudas">Do you have doubts with any word?</string>
+    <string name="timer">Your time is: </string>
+    <string name="blanco">You have not selected an option</string>
+    <string name="siguiente">Next</string>
+    <string name="felicidad">
+Congratulations, you have completed the test</string>
+    <string name="msgPuntuacion">Your score will be:</string>
+    <string name="verErrores">See mistakes</string>
+    <string name="Pregunta">"Question: "</string>
+    <string name="cienenocho">100 in 8 min</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="ciendescripcion">This game mode is a replica of the opposition exam, you have 100 minutes to answer 100 questions, you can mark GOOD, BAD, or SKIP, if you skip it, you will have to answer it at the end, when you finish or the time is up, it will show you the punctuation and errors.</string>
+    <string name="deadmatch">Deadmatch</string>
+    <string name="deadmatchdescripcion">In this game mode you have 10 lives, 10 possible failures, the objective is to answer as many questions as possible before you run out of lives, there is no time limit</string>
+    <string name="btnTerminarTest">End</string>
+    <string name="vidas">Num lives: </string>
+    <string name="msgacierto">¡Right!</string>
+    <string name="msgfallo">¡It\'s a mistake!</string>
+    <string name="ok">OK</string>
+</resources>
